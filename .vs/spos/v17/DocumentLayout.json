@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|c:\\mac\\home\\desktop\\proyecto semestral\\proyectoparcial3\\spos\\forms\\2principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\2principal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\3ventan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\3ventan.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\4inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\4inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\5gastos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\5gastos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\6agregar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\6agregar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\7historialinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\7historialinventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\8_1agregarcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\8_1agregarcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\facturacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\facturacion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\8_2editarcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\8_2editarcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\8historialclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\8historialclientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\9historialventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\9historialventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\forms\\1login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C75D2F2E-0113-4360-8520-49CEB3B4D67A}|spos\\spos.vbproj|solutionrelative:spos\\forms\\1login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "4inventario.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\4inventario.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\4inventario.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\4inventario.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\4inventario.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:14:21.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "5gastos.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\5gastos.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\5gastos.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\5gastos.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\5gastos.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:14:17.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "7historialInventario.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\7historialInventario.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\7historialInventario.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\7historialInventario.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\7historialInventario.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:14:12.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "facturacion.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\facturacion.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\facturacion.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\facturacion.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\facturacion.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:13:16.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "3VentaN.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\3VentaN.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\3VentaN.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\3VentaN.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\3VentaN.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:13:08.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "2principal.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\2principal.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\2principal.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\2principal.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\2principal.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-30T05:12:42.845Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "8_2editarCliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8_2editarCliente.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\8_2editarCliente.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8_2editarCliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\8_2editarCliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:13:44.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "8historialClientes.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8historialClientes.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\8historialClientes.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8historialClientes.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\8historialClientes.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:13:43.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "6agregar.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\6agregar.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\6agregar.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\6agregar.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\6agregar.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-30T05:11:32.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "9historialVentas.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\9historialVentas.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\9historialVentas.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\9historialVentas.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\9historialVentas.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-03T15:13:21.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "8_1agregarCliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8_1agregarCliente.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\8_1agregarCliente.vb",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\8_1agregarCliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "spos\\Forms\\8_1agregarCliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-30T05:07:41.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "1Login.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\1Login.vb",
+              "RelativeDocumentMoniker": "spos\\Forms\\1Login.vb",
+              "ToolTip": "E:\\Parcial 3\\Proyecto Semestral\\ProyectoParcial3\\spos\\Forms\\1Login.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-30T05:12:41.3Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
