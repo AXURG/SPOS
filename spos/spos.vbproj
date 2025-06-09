@@ -170,12 +170,6 @@
     <Compile Include="Forms\3VentaN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\updateShop.Designer.vb">
-      <DependentUpon>updateShop.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\updateShop.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Modules\DBConnection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -230,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\3VentaN.resx">
       <DependentUpon>3VentaN.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\updateShop.resx">
-      <DependentUpon>updateShop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
