@@ -5,13 +5,13 @@ Public Class Login
     ' Función para validar el inicio de sesión
     Public Function Login(usr As String, pass As String) As Boolean
         ' Consulta SQL parametrizada para evitar inyección SQL
-        Dim query As String = "SELECT COUNT(*) FROM vendedores WHERE nombre = @nombre AND password = @password"
+        Dim query As String = "SELECT COUNT(*) FROM vendedores WHERE usuario = @usuario AND password = @password"
 
         ' Usamos el módulo DBConnection para obtener la conexión
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Using command As New SQLiteCommand(query, connection)
                 ' Agregamos los parámetros de forma segura
-                command.Parameters.AddWithValue("@nombre", usr)
+                command.Parameters.AddWithValue("@usuario", usr)
                 command.Parameters.AddWithValue("@password", pass)
 
                 ' Abrimos la conexión y ejecutamos la consulta
