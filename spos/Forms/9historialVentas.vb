@@ -1,6 +1,11 @@
 ﻿Imports System.Data.Entity.Core
 Imports System.Data.SQLite
 Public Class historialVentas
+
+    ''
+    '''
+    '' FALTA EDICION
+    '''
     Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles BtnRegresar.Click
         principal.Show()
         Me.Close()
