@@ -29,7 +29,7 @@ Public Class gastos
                 connection.Open()
                 Using transaction As SQLiteTransaction = connection.BeginTransaction()
                     ' Insertar el nuevo gasto en la tabla 'gastos'
-                    Dim insertQuery As String = "INSERT INTO gastos (descripcion, cantidad, fecha) VALUES (@description, @amount, @date)"
+                    Dim insertQuery As String = "INSERT INTO GASTOS (descripcion, cantidad, fecha) VALUES (@description, @amount, @date)"
                     Using insertCommand As New SQLiteCommand(insertQuery, connection)
                         insertCommand.Parameters.AddWithValue("@description", description)
                         insertCommand.Parameters.AddWithValue("@amount", parsedAmount)
@@ -52,6 +52,7 @@ Public Class gastos
     End Sub
 
     Private Sub BtnCerrar_Click(sender As Object, e As EventArgs) Handles BtnCerrar.Click
+        principal.Show()
         Me.Close()
     End Sub
 

@@ -1,183 +1,3 @@
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\bin\Debug\spos.exe.config
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\bin\Debug\spos.exe
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\bin\Debug\spos.pdb
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\bin\Debug\spos.xml
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.vbprojResolveAssemblyReference.cache
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.Resources.resources
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.vbproj.GenerateResource.Cache
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.exe
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.xml
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.pdb
-c:\users\pasteloiutu\documents\visual studio 2015\Projects\spos\spos\obj\Debug\spos.LOGIN.resources
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\EntityFramework.dll
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\System.Data.SQLite.dll
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\EntityFramework.xml
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\bin\Debug\System.Data.SQLite.xml
-C:\Users\pasteloiutu\Documents\Visual Studio 2015\Projects\spos\spos\obj\Debug\spos.principal.resources
-H:\ProyectoParcialT\spos\bin\Debug\spos.exe.config
-H:\ProyectoParcialT\spos\obj\Debug\spos.exe
-H:\ProyectoParcialT\spos\obj\Debug\spos.xml
-H:\ProyectoParcialT\spos\obj\Debug\spos.pdb
-H:\ProyectoParcialT\spos\bin\Debug\spos.exe
-H:\ProyectoParcialT\spos\bin\Debug\spos.pdb
-H:\ProyectoParcialT\spos\bin\Debug\spos.xml
-H:\ProyectoParcialT\spos\bin\Debug\EntityFramework.dll
-H:\ProyectoParcialT\spos\bin\Debug\EntityFramework.SqlServer.dll
-H:\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.dll
-H:\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.EF6.dll
-H:\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.Linq.dll
-H:\ProyectoParcialT\spos\bin\Debug\EntityFramework.xml
-H:\ProyectoParcialT\spos\bin\Debug\EntityFramework.SqlServer.xml
-H:\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.xml
-H:\ProyectoParcialT\spos\obj\Debug\spos.vbprojResolveAssemblyReference.cache
-H:\ProyectoParcialT\spos\obj\Debug\spos.Resources.resources
-H:\ProyectoParcialT\spos\obj\Debug\spos.principal.resources
-H:\ProyectoParcialT\spos\obj\Debug\spos.vbproj.GenerateResource.Cache
-H:\ProyectoParcialT\spos\obj\Debug\spos.inventario.resources
-H:\ProyectoParcialT\spos\obj\Debug\spos.agregar.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\spos.exe.config
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.exe
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.xml
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.pdb
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.vbprojResolveAssemblyReference.cache
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.agregar.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.inventario.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.Resources.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.principal.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.vbproj.GenerateResource.Cache
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\spos.exe
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\spos.pdb
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\spos.xml
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\EntityFramework.dll
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.dll
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\EntityFramework.xml
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\System.Data.SQLite.xml
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\bin\Debug\data\LARIS.db
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.gastos.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.VentaN.resources
-C:\Users\pasteloiutu\Desktop\ProyectoParcialT\ProyectoParcialT\spos\obj\Debug\spos.LOGIN.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\data\LARIS.db
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe.config
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.pdb
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.xml
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.dll
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.dll
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.dll
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.EF6.dll
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.Linq.dll
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.xml
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.xml
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.xml
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.agregar.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.gastos.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.inventario.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.LOGIN.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Resources.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.principal.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.VentaN.resources
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.GenerateResource.cache
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.Up2Date
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.exe
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.xml
-D:\CBTis16\Tercer Semestre\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.pdb
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\data\LARIS.db
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe.config
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.pdb
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.xml
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.dll
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.dll
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.xml
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.xml
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.agregar.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.gastos.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.inventario.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.LOGIN.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Resources.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.principal.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.VentaN.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.GenerateResource.cache
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.Up2Date
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.exe
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.xml
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.pdb
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.facturacion.resources
-C:\Users\orzun\Escritorio\CBTIS 016\4TO SEMESTRE\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.historialVentas.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\data\LARIS.db
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe.config
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.pdb
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.xml
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.dll
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.dll
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.dll
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.EF6.dll
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.Linq.dll
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.xml
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.xml
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.xml
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.agregar.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.facturacion.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.gastos.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.historialVentas.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.inventario.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Login.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.principal.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.VentaN.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Resources.resources
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.GenerateResource.cache
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.exe
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.xml
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.pdb
-D:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.CopyComplete
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.agregar.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.facturacion.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.gastos.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.historialVentas.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.inventario.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Login.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.principal.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.VentaN.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.Resources.resources
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.GenerateResource.cache
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.exe
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.xml
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.pdb
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\data\LARIS.db
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe.config
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.exe
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.pdb
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\spos.xml
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.dll
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.dll
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.dll
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.EF6.dll
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.Linq.dll
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.xml
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\EntityFramework.SqlServer.xml
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\bin\Debug\System.Data.SQLite.xml
-E:\Parcial 3\Proyecto Semestral\ProyectoParcial3\spos\obj\Debug\spos.vbproj.Up2Date
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\data\LARIS.db
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\spos.exe.config
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\spos.exe
@@ -192,7 +12,6 @@ C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\EntityFramework.xml
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\System.Data.SQLite.xml
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.exe.config
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.agregar.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos._7historialInventario.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos._8historialClientes.resources
@@ -205,6 +24,7 @@ C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.inventario.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.Login.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.principal.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.VentaN.resources
+C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.shopConfig.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.Resources.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.GenerateResource.cache
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
@@ -212,37 +32,4 @@ C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.Up2Date
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.exe
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.xml
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.pdb
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\data\LARIS.db
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\spos.exe.config
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\spos.exe
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\spos.pdb
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\spos.xml
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\EntityFramework.dll
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\System.Data.SQLite.dll
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\System.Data.SQLite.Linq.dll
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\EntityFramework.xml
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\LC1-U\Source\Repos\spos\spos\bin\Debug\System.Data.SQLite.xml
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.vbproj.AssemblyReference.cache
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.agregar.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos._7historialInventario.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos._8historialClientes.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos._8_1agregarCliente_.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos._8_2editarCliente.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.facturacion.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.gastos.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.historialVentas.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.inventario.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.Login.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.principal.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.VentaN.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.shopConfig.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.Resources.resources
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.vbproj.GenerateResource.cache
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.vbproj.CoreCompileInputs.cache
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.vbproj.CopyComplete
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.exe
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.xml
-C:\Users\LC1-U\Source\Repos\spos\spos\obj\Debug\spos.pdb
+C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.exe.config

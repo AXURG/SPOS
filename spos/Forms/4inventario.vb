@@ -21,6 +21,7 @@ Public Class inventario
     End Sub
 
     Private Sub BtnSesion_Click(sender As Object, e As EventArgs) Handles BtnRegresar.Click
+        principal.Show()
         Me.Close()
     End Sub
 End Class

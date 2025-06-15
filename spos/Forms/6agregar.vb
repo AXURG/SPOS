@@ -12,7 +12,7 @@ Public Class agregar
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT NOMBRE FROM productos"
+                Dim query As String = "SELECT nombre FROM PRODUCTOS"
                 Dim command As New SQLiteCommand(query, connection)
 
                 Using reader As SQLiteDataReader = command.ExecuteReader()
@@ -62,7 +62,7 @@ Public Class agregar
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT EXISTENCIAS FROM productos WHERE NOMBRE = @producto"
+                Dim query As String = "SELECT existencia FROM PRODUCTOS WHERE nombre = @producto"
                 Dim command As New SQLiteCommand(query, connection)
                 command.Parameters.AddWithValue("@producto", producto)
 
@@ -84,7 +84,7 @@ Public Class agregar
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "UPDATE productos SET EXISTENCIAS = @nuevasExistencias WHERE NOMBRE = @producto"
+                Dim query As String = "UPDATE PRODUCTOS SET existencia = @nuevasExistencias WHERE nombre = @producto"
                 Dim command As New SQLiteCommand(query, connection)
                 command.Parameters.AddWithValue("@nuevasExistencias", nuevasExistencias)
                 command.Parameters.AddWithValue("@producto", producto)
@@ -141,6 +141,7 @@ Public Class agregar
 
     ' Evento del botón "Cerrar sesión"
     Private Sub BtnSesion_Click(sender As Object, e As EventArgs) Handles BtnSesion.Click
+        principal.Show()
         Me.Close()
     End Sub
 End Class

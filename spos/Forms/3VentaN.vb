@@ -12,14 +12,14 @@ Public Class VentaN
 
     ' Método para cargar los productos en el ComboBox desde la base de datos
     Private Sub CargarProductos()
-        Dim query As String = "SELECT NOMBRE FROM productos"
+        Dim query As String = "SELECT nombre FROM PRODUCTOS"
 
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Using command As New SQLiteCommand(query, connection)
                 connection.Open()
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     While reader.Read()
-                        CmbProducto.Items.Add(reader("NOMBRE").ToString())
+                        CmbProducto.Items.Add(reader("nombre").ToString())
                     End While
                 End Using
             End Using
@@ -46,14 +46,14 @@ Public Class VentaN
 
         ' Obtener precio y existencias disponibles
         Using connection As SQLiteConnection = DBConnection.GetConnection()
-            Dim query As String = "SELECT PRECIO, EXISTENCIAS FROM productos WHERE NOMBRE = @nombre"
+            Dim query As String = "SELECT precio, existencia FROM productos WHERE nombre = @nombre"
             Using command As New SQLiteCommand(query, connection)
                 command.Parameters.AddWithValue("@nombre", producto)
                 connection.Open()
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     If reader.Read() Then
-                        precio = Convert.ToDecimal(reader("PRECIO"))
-                        existencias = Convert.ToInt32(reader("EXISTENCIAS"))
+                        precio = Convert.ToDecimal(reader("precio"))
+                        existencias = Convert.ToInt32(reader("existencia"))
                     Else
                         MsgBox("El producto no existe en la base de datos.", vbExclamation, "Error")
                         Return
@@ -128,7 +128,7 @@ Public Class VentaN
 
                 ' Actualizar existencias en la base de datos
                 For Each kvp In ProductosReservados
-                    Dim query As String = "UPDATE productos SET EXISTENCIAS = @cantidad WHERE NOMBRE = @nombre"
+                    Dim query As String = "UPDATE productos SET existencia = @cantidad WHERE nombre = @nombre"
                     Using command As New SQLiteCommand(query, connection)
                         command.Parameters.AddWithValue("@cantidad", kvp.Value)
                         command.Parameters.AddWithValue("@nombre", kvp.Key)
@@ -148,7 +148,7 @@ Public Class VentaN
             connection.Open()
 
             For Each kvp In ProductosReservados
-                Dim query As String = "UPDATE productos SET EXISTENCIAS = @cantidad WHERE NOMBRE = @nombre"
+                Dim query As String = "UPDATE productos SET existencia = @cantidad WHERE nombre = @nombre"
                 Using command As New SQLiteCommand(query, connection)
                     command.Parameters.AddWithValue("@nombre", kvp.Key)
                     command.ExecuteNonQuery()
@@ -192,7 +192,7 @@ Public Class VentaN
                 Dim producto As String = row.Cells(0).Value.ToString()
                 Dim cantidad As Integer = Convert.ToInt32(row.Cells(1).Value)
 
-                Dim query As String = "UPDATE productos SET EXISTENCIAS = EXISTENCIAS - @cantidad WHERE NOMBRE = @nombre"
+                Dim query As String = "UPDATE productos SET existencia = existencia - @cantidad WHERE nombre = @nombre"
                 Using command As New SQLiteCommand(query, connection)
                     command.Parameters.AddWithValue("@cantidad", cantidad)
                     command.Parameters.AddWithValue("@nombre", producto)
@@ -223,6 +223,7 @@ Public Class VentaN
 
     ' Botón para regresar (cerrar formulario)
     Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles BtnRegresar.Click
+        principal.Show()
         Me.Close()
     End Sub
 
