@@ -22,7 +22,7 @@ Partial Class gastos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DgvGasto = New System.Windows.Forms.DataGridView()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -31,6 +31,12 @@ Partial Class gastos
         Me.TxtConcepto = New System.Windows.Forms.TextBox()
         Me.BtnCerrar = New System.Windows.Forms.Button()
         Me.LblUser = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCategoria = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtMetodoPago = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtObservacion = New System.Windows.Forms.TextBox()
         CType(Me.DgvGasto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,30 +48,30 @@ Partial Class gastos
         Me.DgvGasto.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.DgvGasto.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical
         Me.DgvGasto.ColumnHeadersHeight = 29
-        Me.DgvGasto.Location = New System.Drawing.Point(-7, 286)
-        Me.DgvGasto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgvGasto.Location = New System.Drawing.Point(-10, 447)
+        Me.DgvGasto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.DgvGasto.Name = "DgvGasto"
         Me.DgvGasto.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvGasto.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonFace
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvGasto.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DgvGasto.RowHeadersWidth = 51
-        Me.DgvGasto.Size = New System.Drawing.Size(1203, 475)
+        Me.DgvGasto.Size = New System.Drawing.Size(1804, 742)
         Me.DgvGasto.TabIndex = 13
         '
         'btnAgregar
         '
         Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Location = New System.Drawing.Point(473, 188)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAgregar.Location = New System.Drawing.Point(760, 344)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(196, 58)
+        Me.btnAgregar.Size = New System.Drawing.Size(294, 91)
         Me.btnAgregar.TabIndex = 18
         Me.btnAgregar.Text = "AGREGAR"
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -75,20 +81,20 @@ Partial Class gastos
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(613, 86)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(702, 134)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(130, 29)
+        Me.Label4.Size = New System.Drawing.Size(198, 44)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "IMPORTE"
         '
         'TxtImporte
         '
         Me.TxtImporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtImporte.Location = New System.Drawing.Point(757, 84)
-        Me.TxtImporte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtImporte.Location = New System.Drawing.Point(918, 131)
+        Me.TxtImporte.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TxtImporte.Name = "TxtImporte"
-        Me.TxtImporte.Size = New System.Drawing.Size(139, 34)
+        Me.TxtImporte.Size = New System.Drawing.Size(206, 51)
         Me.TxtImporte.TabIndex = 16
         '
         'Label2
@@ -96,20 +102,20 @@ Partial Class gastos
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(169, 84)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(57, 134)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 29)
+        Me.Label2.Size = New System.Drawing.Size(241, 44)
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "CONCEPTO"
         '
         'TxtConcepto
         '
         Me.TxtConcepto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtConcepto.Location = New System.Drawing.Point(344, 82)
-        Me.TxtConcepto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtConcepto.Location = New System.Drawing.Point(319, 131)
+        Me.TxtConcepto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TxtConcepto.Name = "TxtConcepto"
-        Me.TxtConcepto.Size = New System.Drawing.Size(233, 34)
+        Me.TxtConcepto.Size = New System.Drawing.Size(348, 51)
         Me.TxtConcepto.TabIndex = 14
         '
         'BtnCerrar
@@ -117,10 +123,10 @@ Partial Class gastos
         Me.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCerrar.ForeColor = System.Drawing.Color.Transparent
-        Me.BtnCerrar.Location = New System.Drawing.Point(1143, 15)
-        Me.BtnCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnCerrar.Location = New System.Drawing.Point(1714, 23)
+        Me.BtnCerrar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.BtnCerrar.Name = "BtnCerrar"
-        Me.BtnCerrar.Size = New System.Drawing.Size(40, 39)
+        Me.BtnCerrar.Size = New System.Drawing.Size(60, 61)
         Me.BtnCerrar.TabIndex = 19
         Me.BtnCerrar.Text = "X"
         Me.BtnCerrar.UseVisualStyleBackColor = True
@@ -130,20 +136,90 @@ Partial Class gastos
         Me.LblUser.CausesValidation = False
         Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LblUser.Location = New System.Drawing.Point(402, 15)
-        Me.LblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblUser.Location = New System.Drawing.Point(603, 23)
+        Me.LblUser.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.LblUser.Name = "LblUser"
-        Me.LblUser.Size = New System.Drawing.Size(312, 29)
+        Me.LblUser.Size = New System.Drawing.Size(468, 45)
         Me.LblUser.TabIndex = 20
         Me.LblUser.Text = "GASTOS"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.Location = New System.Drawing.Point(1160, 134)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(250, 44)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "CATEGORIA"
+        '
+        'txtCategoria
+        '
+        Me.txtCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategoria.Location = New System.Drawing.Point(1422, 131)
+        Me.txtCategoria.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtCategoria.Name = "txtCategoria"
+        Me.txtCategoria.Size = New System.Drawing.Size(325, 51)
+        Me.txtCategoria.TabIndex = 21
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label3.Location = New System.Drawing.Point(57, 258)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(382, 44)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "METODO DE PAGO"
+        '
+        'txtMetodoPago
+        '
+        Me.txtMetodoPago.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMetodoPago.Location = New System.Drawing.Point(451, 255)
+        Me.txtMetodoPago.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtMetodoPago.Name = "txtMetodoPago"
+        Me.txtMetodoPago.Size = New System.Drawing.Size(315, 51)
+        Me.txtMetodoPago.TabIndex = 23
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label5.Location = New System.Drawing.Point(968, 255)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(280, 44)
+        Me.Label5.TabIndex = 26
+        Me.Label5.Text = "OBSERACION"
+        '
+        'txtObservacion
+        '
+        Me.txtObservacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtObservacion.Location = New System.Drawing.Point(1260, 251)
+        Me.txtObservacion.Margin = New System.Windows.Forms.Padding(6)
+        Me.txtObservacion.Name = "txtObservacion"
+        Me.txtObservacion.Size = New System.Drawing.Size(315, 51)
+        Me.txtObservacion.TabIndex = 25
+        '
         'gastos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1196, 759)
+        Me.ClientSize = New System.Drawing.Size(1794, 1186)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtObservacion)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtMetodoPago)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtCategoria)
         Me.Controls.Add(Me.LblUser)
         Me.Controls.Add(Me.BtnCerrar)
         Me.Controls.Add(Me.btnAgregar)
@@ -153,7 +229,7 @@ Partial Class gastos
         Me.Controls.Add(Me.TxtConcepto)
         Me.Controls.Add(Me.DgvGasto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "gastos"
         Me.Text = "gastos"
         CType(Me.DgvGasto, System.ComponentModel.ISupportInitialize).EndInit()
@@ -170,4 +246,10 @@ Partial Class gastos
     Friend WithEvents TxtConcepto As TextBox
     Friend WithEvents BtnCerrar As Button
     Friend WithEvents LblUser As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtCategoria As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtMetodoPago As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtObservacion As TextBox
 End Class

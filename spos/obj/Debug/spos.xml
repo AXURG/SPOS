@@ -82,8 +82,5 @@ spos
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="M:spos.historialVentas.BtnRegresar_Click(System.Object,System.EventArgs)">
-
-</member>
 </members>
 </doc>

@@ -12,6 +12,10 @@ Public Class gastos
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim description As String = TxtConcepto.Text
         Dim amount As String = TxtImporte.Text
+        Dim categoria As String = txtCategoria.Text
+        Dim metodoPago As String = txtMetodoPago.Text
+        Dim observaciones As String = txtObservacion.Text
+        Dim usuarioID As Integer = session.userid
         If String.IsNullOrEmpty(description) OrElse String.IsNullOrEmpty(amount) Then
             MessageBox.Show("Por favor, complete todos los campos.")
             Return
@@ -29,11 +33,16 @@ Public Class gastos
                 connection.Open()
                 Using transaction As SQLiteTransaction = connection.BeginTransaction()
                     ' Insertar el nuevo gasto en la tabla 'gastos'
-                    Dim insertQuery As String = "INSERT INTO GASTOS (descripcion, cantidad, fecha) VALUES (@description, @amount, @date)"
+                    Dim insertQuery As String = "INSERT INTO GASTOS (descripcion, monto, fecha_gasto, categoria, metodo_pago, observaciones, usuario_id) VALUES (@description, @amount, @date, @categoria, @metodoPago, @observaciones, @usuarioID )"
                     Using insertCommand As New SQLiteCommand(insertQuery, connection)
                         insertCommand.Parameters.AddWithValue("@description", description)
                         insertCommand.Parameters.AddWithValue("@amount", parsedAmount)
                         insertCommand.Parameters.AddWithValue("@date", currentDate)
+                        insertCommand.Parameters.AddWithValue("@categoria", categoria)
+                        insertCommand.Parameters.AddWithValue("@metodoPago", metodoPago)
+                        insertCommand.Parameters.AddWithValue("@observaciones", observaciones)
+                        insertCommand.Parameters.AddWithValue("@usuarioID", usuarioID)
+
                         insertCommand.ExecuteNonQuery()
                     End Using
                     transaction.Commit()
@@ -61,7 +70,7 @@ Public Class gastos
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT * FROM gastos"
+                Dim query As String = "SELECT * FROM gastos ORDER BY id_gasto"
                 Using adapter As New SQLiteDataAdapter(query, connection)
                     Dim dbTable As New DataTable()
                     adapter.Fill(dbTable)

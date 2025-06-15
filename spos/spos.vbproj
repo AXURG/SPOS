@@ -170,6 +170,7 @@
     <Compile Include="Forms\3VentaN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\session.vb" />
     <Compile Include="Forms\shopConfig.Designer.vb">
       <DependentUpon>shopConfig.vb</DependentUpon>
     </Compile>

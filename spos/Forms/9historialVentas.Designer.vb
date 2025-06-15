@@ -23,15 +23,10 @@ Partial Class historialVentas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dtgv_ventas = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnRegresar = New System.Windows.Forms.Button()
         Me.LblUser = New System.Windows.Forms.Label()
         Me.btnVerDetalles = New System.Windows.Forms.Button()
         Me.btnRegresarConsulta = New System.Windows.Forms.Button()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnSellNew = New System.Windows.Forms.PictureBox()
         CType(Me.dtgv_ventas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnSellNew, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,42 +38,13 @@ Partial Class historialVentas
         Me.dtgv_ventas.AllowUserToDeleteRows = False
         Me.dtgv_ventas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtgv_ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgv_ventas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        Me.dtgv_ventas.Location = New System.Drawing.Point(212, 60)
-        Me.dtgv_ventas.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtgv_ventas.Location = New System.Drawing.Point(318, 94)
+        Me.dtgv_ventas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.dtgv_ventas.Name = "dtgv_ventas"
         Me.dtgv_ventas.ReadOnly = True
         Me.dtgv_ventas.RowHeadersWidth = 51
-        Me.dtgv_ventas.Size = New System.Drawing.Size(828, 709)
+        Me.dtgv_ventas.Size = New System.Drawing.Size(1242, 1108)
         Me.dtgv_ventas.TabIndex = 5
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Fecha de Venta"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "TOTAL"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Numero de registro del Vendedor"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
         '
         'BtnRegresar
         '
@@ -86,10 +52,10 @@ Partial Class historialVentas
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegresar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnRegresar.Location = New System.Drawing.Point(27, 260)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnRegresar.Location = New System.Drawing.Point(40, 406)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(141, 66)
+        Me.BtnRegresar.Size = New System.Drawing.Size(212, 103)
         Me.BtnRegresar.TabIndex = 4
         Me.BtnRegresar.Text = "REGRESAR"
         Me.BtnRegresar.UseVisualStyleBackColor = False
@@ -99,10 +65,10 @@ Partial Class historialVentas
         Me.LblUser.CausesValidation = False
         Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LblUser.Location = New System.Drawing.Point(217, 9)
-        Me.LblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblUser.Location = New System.Drawing.Point(326, 14)
+        Me.LblUser.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.LblUser.Name = "LblUser"
-        Me.LblUser.Size = New System.Drawing.Size(267, 25)
+        Me.LblUser.Size = New System.Drawing.Size(400, 39)
         Me.LblUser.TabIndex = 6
         Me.LblUser.Text = "SELECCIONE LA VENTA"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -113,10 +79,10 @@ Partial Class historialVentas
         Me.btnVerDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerDetalles.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVerDetalles.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVerDetalles.Location = New System.Drawing.Point(27, 363)
-        Me.btnVerDetalles.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnVerDetalles.Location = New System.Drawing.Point(40, 567)
+        Me.btnVerDetalles.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnVerDetalles.Name = "btnVerDetalles"
-        Me.btnVerDetalles.Size = New System.Drawing.Size(141, 66)
+        Me.btnVerDetalles.Size = New System.Drawing.Size(212, 103)
         Me.btnVerDetalles.TabIndex = 7
         Me.btnVerDetalles.Text = "VER DETALLES"
         Me.btnVerDetalles.UseVisualStyleBackColor = False
@@ -127,29 +93,22 @@ Partial Class historialVentas
         Me.btnRegresarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegresarConsulta.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegresarConsulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRegresarConsulta.Location = New System.Drawing.Point(27, 260)
-        Me.btnRegresarConsulta.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRegresarConsulta.Location = New System.Drawing.Point(40, 406)
+        Me.btnRegresarConsulta.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnRegresarConsulta.Name = "btnRegresarConsulta"
-        Me.btnRegresarConsulta.Size = New System.Drawing.Size(141, 66)
+        Me.btnRegresarConsulta.Size = New System.Drawing.Size(212, 103)
         Me.btnRegresarConsulta.TabIndex = 8
         Me.btnRegresarConsulta.Text = "REGRESAR"
         Me.btnRegresarConsulta.UseVisualStyleBackColor = False
         Me.btnRegresarConsulta.Visible = False
         '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Facturacion (Si o No)"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        '
         'BtnSellNew
         '
         Me.BtnSellNew.Image = Global.spos.My.Resources.Resources.ingresara
-        Me.BtnSellNew.Location = New System.Drawing.Point(27, 92)
-        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSellNew.Location = New System.Drawing.Point(40, 144)
+        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.BtnSellNew.Name = "BtnSellNew"
-        Me.BtnSellNew.Size = New System.Drawing.Size(147, 116)
+        Me.BtnSellNew.Size = New System.Drawing.Size(220, 181)
         Me.BtnSellNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BtnSellNew.TabIndex = 9
         Me.BtnSellNew.TabStop = False
@@ -157,10 +116,10 @@ Partial Class historialVentas
         '
         'historialVentas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1112, 782)
+        Me.ClientSize = New System.Drawing.Size(1668, 1222)
         Me.Controls.Add(Me.BtnSellNew)
         Me.Controls.Add(Me.btnRegresarConsulta)
         Me.Controls.Add(Me.btnVerDetalles)
@@ -168,7 +127,7 @@ Partial Class historialVentas
         Me.Controls.Add(Me.dtgv_ventas)
         Me.Controls.Add(Me.BtnRegresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "historialVentas"
         Me.Text = "Historial de Ventas"
         CType(Me.dtgv_ventas, System.ComponentModel.ISupportInitialize).EndInit()
@@ -182,10 +141,5 @@ Partial Class historialVentas
     Friend WithEvents LblUser As Label
     Friend WithEvents btnVerDetalles As Button
     Friend WithEvents btnRegresarConsulta As Button
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents BtnSellNew As PictureBox
 End Class

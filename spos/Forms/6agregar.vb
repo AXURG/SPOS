@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SQLite
 
 Public Class agregar
+
     Private Sub agregar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cargarDatos()
     End Sub
@@ -17,7 +18,7 @@ Public Class agregar
 
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     While reader.Read()
-                        cmbProducto.Items.Add(reader("NOMBRE").ToString())
+                        cmbProducto.Items.Add(reader("nombre").ToString())
                     End While
                 End Using
             Catch ex As Exception
@@ -68,7 +69,9 @@ Public Class agregar
 
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     If reader.Read() Then
-                        existencias = Convert.ToInt32(reader("EXISTENCIAS"))
+                        If Not IsDBNull(reader("existencia")) Then
+                            existencias = Convert.ToInt32(reader("existencia"))
+                        End If
                     End If
                 End Using
             Catch ex As Exception
@@ -145,3 +148,4 @@ Public Class agregar
         Me.Close()
     End Sub
 End Class
+
