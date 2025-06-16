@@ -8,7 +8,7 @@ Public Class inventario
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT id, nombre, precio, existencia FROM PRODUCTOS"
+                Dim query As String = "SELECT id as [ID], nombre AS [Nombre], precio AS [Precio], existencia AS [Existencias], medida AS [Unidad de Medida]FROM PRODUCTOS"
                 Using adapter As New SQLiteDataAdapter(query, connection)
                     Dim dbTable As New DataTable()
                     adapter.Fill(dbTable)
@@ -24,8 +24,5 @@ Public Class inventario
         principal.Show()
         Me.Close()
     End Sub
-
-    Private Sub dtgv_inventario_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgv_inventario.CellContentClick
-
-    End Sub
 End Class
+

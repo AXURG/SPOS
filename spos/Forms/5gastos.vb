@@ -26,7 +26,7 @@ Public Class gastos
             MessageBox.Show("El importe debe ser un número positivo.")
             Return
         End If
-        Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd")
+        Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd HH:mm")
 
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
@@ -70,7 +70,15 @@ Public Class gastos
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT * FROM gastos ORDER BY id_gasto"
+                Dim query As String = "SELECT 
+ id_gasto AS [ID],
+descripcion AS [Descripción],
+monto as [Monto],
+fecha_gasto AS [Fecha],
+categoria AS [Categoria],
+metodo_pago AS [Forma de Pago],
+observaciones AS [Observaciones],
+usuario_id AS [Efectuante del Gasto] FROM gastos ORDER BY id_gasto"
                 Using adapter As New SQLiteDataAdapter(query, connection)
                     Dim dbTable As New DataTable()
                     adapter.Fill(dbTable)
