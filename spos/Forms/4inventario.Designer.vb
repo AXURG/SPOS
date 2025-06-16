@@ -34,10 +34,10 @@ Partial Class inventario
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegresar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnRegresar.Location = New System.Drawing.Point(20, 598)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BtnRegresar.Location = New System.Drawing.Point(13, 383)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(212, 103)
+        Me.BtnRegresar.Size = New System.Drawing.Size(141, 66)
         Me.BtnRegresar.TabIndex = 2
         Me.BtnRegresar.Text = "REGRESAR"
         Me.BtnRegresar.UseVisualStyleBackColor = False
@@ -51,12 +51,12 @@ Partial Class inventario
         Me.dtgv_inventario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical
         Me.dtgv_inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgv_inventario.Cursor = System.Windows.Forms.Cursors.Default
-        Me.dtgv_inventario.Location = New System.Drawing.Point(264, 80)
-        Me.dtgv_inventario.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dtgv_inventario.Location = New System.Drawing.Point(176, 51)
+        Me.dtgv_inventario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtgv_inventario.Name = "dtgv_inventario"
         Me.dtgv_inventario.ReadOnly = True
         Me.dtgv_inventario.RowHeadersWidth = 51
-        Me.dtgv_inventario.Size = New System.Drawing.Size(1242, 1108)
+        Me.dtgv_inventario.Size = New System.Drawing.Size(828, 672)
         Me.dtgv_inventario.TabIndex = 3
         '
         'LblUser
@@ -64,26 +64,26 @@ Partial Class inventario
         Me.LblUser.CausesValidation = False
         Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LblUser.Location = New System.Drawing.Point(543, 14)
-        Me.LblUser.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.LblUser.Location = New System.Drawing.Point(362, 9)
+        Me.LblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblUser.Name = "LblUser"
-        Me.LblUser.Size = New System.Drawing.Size(468, 45)
+        Me.LblUser.Size = New System.Drawing.Size(312, 29)
         Me.LblUser.TabIndex = 10
         Me.LblUser.Text = "INVENTARIO"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'inventario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1548, 1244)
+        Me.ClientSize = New System.Drawing.Size(1032, 749)
         Me.Controls.Add(Me.LblUser)
         Me.Controls.Add(Me.dtgv_inventario)
         Me.Controls.Add(Me.BtnRegresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "inventario"
         Me.Text = "inventario"
         CType(Me.dtgv_inventario, System.ComponentModel.ISupportInitialize).EndInit()

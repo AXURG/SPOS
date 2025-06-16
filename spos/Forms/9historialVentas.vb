@@ -47,14 +47,14 @@ Public Class historialVentas
                 connection.Open()
                 Dim query As String = "
                     SELECT 
-                        venta_id AS [ID de Venta],
-                        producto_id AS [ID del Producto],
-                        nombre_producto AS [Nombre del Producto],
-                        precio_unitario AS [Precio Unitario],
-                        cantidad AS [Cantidad],
-                        importe AS [Importe]
-                    FROM DVENTA
-                    WHERE venta_id = @venta_id"
+    venta_id AS [ID de Venta],
+    producto_id AS [ID del Producto],
+	PRODUCTOS.nombre AS [Nombre del Producto],
+    precio_unitario AS [Precio Unitario],
+    cantidad AS [Cantidad],
+    importe AS [Importe]
+FROM DVENTA INNER JOIN PRODUCTOS ON DVENTA.producto_id=PRODUCTOS.id
+WHERE venta_id = @venta_id"
 
                 Using command As New SQLiteCommand(query, connection)
                     command.Parameters.AddWithValue("@venta_id", idVenta)
