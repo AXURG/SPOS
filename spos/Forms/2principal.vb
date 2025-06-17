@@ -58,9 +58,6 @@
         Else
             LblUser.Text = "Bienvenid@"
         End If
-
-
-
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) 
@@ -69,7 +66,7 @@
 
     Private Sub btnClientes_Click(sender As Object, e As EventArgs) Handles btnClientes.Click
         _8historialClientes.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub LblUser_Click(sender As Object, e As EventArgs) Handles LblUser.Click

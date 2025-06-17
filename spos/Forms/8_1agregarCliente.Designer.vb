@@ -24,22 +24,20 @@ Partial Class _8_1agregarCliente_
     Private Sub InitializeComponent()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtCantidad = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtRFC = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.btnClientes = New System.Windows.Forms.PictureBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.BtnRegresar = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.btnClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,7 +46,7 @@ Partial Class _8_1agregarCliente_
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label6.Location = New System.Drawing.Point(227, 38)
+        Me.Label6.Location = New System.Drawing.Point(516, 39)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(217, 31)
@@ -67,14 +65,15 @@ Partial Class _8_1agregarCliente_
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Nombre Completo:"
         '
-        'txtCantidad
+        'txtNombre
         '
-        Me.txtCantidad.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCantidad.Location = New System.Drawing.Point(275, 113)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(283, 38)
-        Me.txtCantidad.TabIndex = 33
+        Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(275, 113)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(684, 37)
+        Me.txtNombre.TabIndex = 33
         '
         'Label1
         '
@@ -88,23 +87,25 @@ Partial Class _8_1agregarCliente_
         Me.Label1.TabIndex = 36
         Me.Label1.Text = "RFC:"
         '
-        'TextBox1
+        'txtRFC
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(275, 177)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox1.TabIndex = 35
+        Me.txtRFC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtRFC.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRFC.Location = New System.Drawing.Point(275, 181)
+        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRFC.Name = "txtRFC"
+        Me.txtRFC.Size = New System.Drawing.Size(684, 37)
+        Me.txtRFC.TabIndex = 35
         '
-        'TextBox2
+        'txtTelefono
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(275, 241)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox2.TabIndex = 37
+        Me.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtTelefono.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.Location = New System.Drawing.Point(275, 241)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(684, 37)
+        Me.txtTelefono.TabIndex = 37
         '
         'Label3
         '
@@ -118,14 +119,15 @@ Partial Class _8_1agregarCliente_
         Me.Label3.TabIndex = 40
         Me.Label3.Text = "Correo:"
         '
-        'TextBox3
+        'txtCorreo
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(275, 303)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox3.TabIndex = 39
+        Me.txtCorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtCorreo.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCorreo.Location = New System.Drawing.Point(275, 303)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(684, 37)
+        Me.txtCorreo.TabIndex = 39
         '
         'Label5
         '
@@ -139,73 +141,31 @@ Partial Class _8_1agregarCliente_
         Me.Label5.TabIndex = 42
         Me.Label5.Text = "Telefono:"
         '
-        'TextBox4
+        'txtDireccion
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(275, 360)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox4.TabIndex = 41
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label7.Location = New System.Drawing.Point(168, 425)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(88, 25)
-        Me.Label7.TabIndex = 44
-        Me.Label7.Text = "Ciudad:"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(275, 425)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox5.TabIndex = 43
+        Me.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtDireccion.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDireccion.Location = New System.Drawing.Point(275, 367)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(684, 37)
+        Me.txtDireccion.TabIndex = 41
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(75, 360)
+        Me.Label2.Location = New System.Drawing.Point(145, 367)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(181, 25)
+        Me.Label2.Size = New System.Drawing.Size(112, 38)
         Me.Label2.TabIndex = 45
-        Me.Label2.Text = "Direccion (Calle):"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label8.Location = New System.Drawing.Point(194, 502)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(55, 25)
-        Me.Label8.TabIndex = 47
-        Me.Label8.Text = "C.P:"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(275, 494)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(283, 38)
-        Me.TextBox6.TabIndex = 46
+        Me.Label2.Text = "Direccion:"
         '
         'btnClientes
         '
         Me.btnClientes.Image = Global.spos.My.Resources.Resources.btnclientes
-        Me.btnClientes.Location = New System.Drawing.Point(97, 13)
+        Me.btnClientes.Location = New System.Drawing.Point(386, 14)
         Me.btnClientes.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClientes.Name = "btnClientes"
         Me.btnClientes.Size = New System.Drawing.Size(113, 75)
@@ -218,10 +178,12 @@ Partial Class _8_1agregarCliente_
         '
         Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Location = New System.Drawing.Point(199, 586)
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnAgregar.Location = New System.Drawing.Point(426, 593)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(196, 58)
+        Me.btnAgregar.Size = New System.Drawing.Size(250, 76)
         Me.btnAgregar.TabIndex = 49
         Me.btnAgregar.Text = "AGREGAR"
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -230,38 +192,61 @@ Partial Class _8_1agregarCliente_
         '
         Me.BtnRegresar.BackColor = System.Drawing.Color.Tomato
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnRegresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnRegresar.Location = New System.Drawing.Point(46, 634)
+        Me.BtnRegresar.Location = New System.Drawing.Point(69, 619)
         Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(103, 47)
+        Me.BtnRegresar.Size = New System.Drawing.Size(131, 63)
         Me.BtnRegresar.TabIndex = 50
         Me.BtnRegresar.Text = "REGRESAR"
         Me.BtnRegresar.UseVisualStyleBackColor = False
+        '
+        'Label7
+        '
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label7.Location = New System.Drawing.Point(320, 491)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(433, 81)
+        Me.Label7.TabIndex = 51
+        Me.Label7.Text = "Ej: 8 PONIENTE, EXTERIOR 4, INTERIOR 5, COLONIA CENTRO, 74240, ATLIXCO, PUEBLA"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label8
+        '
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label8.Location = New System.Drawing.Point(336, 426)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(397, 65)
+        Me.Label8.TabIndex = 52
+        Me.Label8.Text = "(Calle, Num Exterior, Num Interior, Colonia, C.P, Municipio, Estado)"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         '_8_1agregarCliente_
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(633, 719)
+        Me.ClientSize = New System.Drawing.Size(1047, 713)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.BtnRegresar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.btnClientes)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtCorreo)
+        Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtRFC)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtCantidad)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "_8_1agregarCliente_"
@@ -274,20 +259,18 @@ Partial Class _8_1agregarCliente_
 
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtCantidad As TextBox
+    Friend WithEvents txtNombre As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtRFC As TextBox
+    Friend WithEvents txtTelefono As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtCorreo As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtDireccion As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents btnClientes As PictureBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents BtnRegresar As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class

@@ -22,79 +22,46 @@ Partial Class _8historialClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnVerDetalles = New System.Windows.Forms.Button()
-        Me.dtgv_inventario = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.dgv_clientes = New System.Windows.Forms.DataGridView()
         Me.BtnRegresar = New System.Windows.Forms.Button()
         Me.LblUser = New System.Windows.Forms.Label()
-        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnClientes = New System.Windows.Forms.PictureBox()
-        CType(Me.dtgv_inventario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_clientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnVerDetalles
+        'btnAgregar
         '
-        Me.btnVerDetalles.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnVerDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVerDetalles.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVerDetalles.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVerDetalles.Location = New System.Drawing.Point(25, 502)
-        Me.btnVerDetalles.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnVerDetalles.Name = "btnVerDetalles"
-        Me.btnVerDetalles.Size = New System.Drawing.Size(141, 104)
-        Me.btnVerDetalles.TabIndex = 11
-        Me.btnVerDetalles.Text = "AGREGAR NUEVO CLIENTE"
-        Me.btnVerDetalles.UseVisualStyleBackColor = False
+        Me.btnAgregar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnAgregar.Location = New System.Drawing.Point(25, 502)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(141, 104)
+        Me.btnAgregar.TabIndex = 11
+        Me.btnAgregar.Text = "AGREGAR NUEVO CLIENTE"
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
-        'dtgv_inventario
+        'dgv_clientes
         '
-        Me.dtgv_inventario.AllowUserToAddRows = False
-        Me.dtgv_inventario.AllowUserToDeleteRows = False
-        Me.dtgv_inventario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dtgv_inventario.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.dtgv_inventario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical
-        Me.dtgv_inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgv_inventario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3})
-        Me.dtgv_inventario.Cursor = System.Windows.Forms.Cursors.Default
-        Me.dtgv_inventario.Location = New System.Drawing.Point(188, 53)
-        Me.dtgv_inventario.Margin = New System.Windows.Forms.Padding(4)
-        Me.dtgv_inventario.Name = "dtgv_inventario"
-        Me.dtgv_inventario.ReadOnly = True
-        Me.dtgv_inventario.RowHeadersWidth = 51
-        Me.dtgv_inventario.Size = New System.Drawing.Size(828, 709)
-        Me.dtgv_inventario.TabIndex = 10
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "ID CLIENTE"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "NOMBRE CLIENTE"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "RFC"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "CORREO"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
+        Me.dgv_clientes.AllowUserToAddRows = False
+        Me.dgv_clientes.AllowUserToDeleteRows = False
+        Me.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_clientes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.dgv_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical
+        Me.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_clientes.Cursor = System.Windows.Forms.Cursors.Default
+        Me.dgv_clientes.Location = New System.Drawing.Point(188, 53)
+        Me.dgv_clientes.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgv_clientes.Name = "dgv_clientes"
+        Me.dgv_clientes.ReadOnly = True
+        Me.dgv_clientes.RowHeadersWidth = 51
+        Me.dgv_clientes.Size = New System.Drawing.Size(828, 709)
+        Me.dgv_clientes.TabIndex = 10
         '
         'BtnRegresar
         '
@@ -123,19 +90,19 @@ Partial Class _8historialClientes
         Me.LblUser.Text = "HISTORIAL CLIENTES"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'btnAgregar
+        'btnEditar
         '
-        Me.btnAgregar.BackColor = System.Drawing.Color.DarkOrange
-        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAgregar.Location = New System.Drawing.Point(25, 406)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(141, 47)
-        Me.btnAgregar.TabIndex = 22
-        Me.btnAgregar.Text = "EDITAR"
-        Me.btnAgregar.UseVisualStyleBackColor = False
+        Me.btnEditar.BackColor = System.Drawing.Color.DarkOrange
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEditar.Location = New System.Drawing.Point(25, 406)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(141, 47)
+        Me.btnEditar.TabIndex = 22
+        Me.btnEditar.Text = "EDITAR"
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
         'btnClientes
         '
@@ -156,28 +123,24 @@ Partial Class _8historialClientes
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1045, 785)
         Me.Controls.Add(Me.btnClientes)
-        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.LblUser)
-        Me.Controls.Add(Me.btnVerDetalles)
-        Me.Controls.Add(Me.dtgv_inventario)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.dgv_clientes)
         Me.Controls.Add(Me.BtnRegresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "_8historialClientes"
         Me.Text = "_8historialClientes"
-        CType(Me.dtgv_inventario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_clientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnVerDetalles As Button
-    Friend WithEvents dtgv_inventario As DataGridView
-    Friend WithEvents BtnRegresar As Button
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents LblUser As Label
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents dgv_clientes As DataGridView
+    Friend WithEvents BtnRegresar As Button
+    Friend WithEvents LblUser As Label
+    Friend WithEvents btnEditar As Button
     Friend WithEvents btnClientes As PictureBox
 End Class

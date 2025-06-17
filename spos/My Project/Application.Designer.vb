@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.spos.historialVentas
+            Me.MainForm = Global.spos.principal
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
