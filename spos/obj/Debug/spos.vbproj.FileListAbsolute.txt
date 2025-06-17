@@ -68,3 +68,5 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.Up2Date
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.exe
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.xml
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.pdb
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6opcion.resources
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6_2baja.resources

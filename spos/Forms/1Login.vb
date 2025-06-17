@@ -60,7 +60,5 @@ Public Class Login
         End If
     End Sub
 
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Puedes dejar esto vacío o usarlo si necesitas algo al cargar el formulario
-    End Sub
+
 End Class

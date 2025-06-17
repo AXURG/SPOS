@@ -98,10 +98,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\6agregar.Designer.vb">
-      <DependentUpon>6agregar.vb</DependentUpon>
+    <Compile Include="Forms\6inventario.Designer.vb">
+      <DependentUpon>6inventario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\6agregar.vb">
+    <Compile Include="Forms\6inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\6_1agregar.Designer.vb">
+      <DependentUpon>6_1agregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\6_1agregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\6_2baja.Designer.vb">
+      <DependentUpon>6_2baja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\6_2baja.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\7historialInventario.Designer.vb">
@@ -196,8 +208,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\6agregar.resx">
-      <DependentUpon>6agregar.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\6inventario.resx">
+      <DependentUpon>6inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\6_1agregar.resx">
+      <DependentUpon>6_1agregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\6_2baja.resx">
+      <DependentUpon>6_2baja.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\7historialInventario.resx">
       <DependentUpon>7historialInventario.vb</DependentUpon>
@@ -295,6 +313,8 @@
     <None Include="Resources\pago1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bajas.png" />
+    <None Include="Resources\altas.png" />
     <Content Include="Resources\cliente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

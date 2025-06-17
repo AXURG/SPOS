@@ -8,7 +8,7 @@ Public Class inventario
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Try
                 connection.Open()
-                Dim query As String = "SELECT id as [ID], nombre AS [Nombre], precio AS [Precio], existencia AS [Existencias], medida AS [Unidad de Medida]FROM PRODUCTOS"
+                Dim query As String = "SELECT id as [ID], nombre AS [Nombre], precio AS [Precio], existencia AS [Existencias] FROM PRODUCTOS"
                 Using adapter As New SQLiteDataAdapter(query, connection)
                     Dim dbTable As New DataTable()
                     adapter.Fill(dbTable)

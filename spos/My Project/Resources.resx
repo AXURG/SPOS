@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pago1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pago1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnproveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnproveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,7 +154,10 @@
   <data name="Banking_00011_A_icon-icons.com_59831" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Banking_00011_A_icon-icons.com_59831.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pago1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pago1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bajas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bajas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="altas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\altas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

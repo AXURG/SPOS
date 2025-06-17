@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property altas() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("altas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bajas() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bajas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Banking_00011_A_icon_icons_com_59831() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Banking_00011_A_icon-icons.com_59831", resourceCulture)

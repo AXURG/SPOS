@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SQLite
 
-Public Class agregar
-
+Public Class _6_2baja
+    Dim tipo As String = "BAJA"
     Private Sub agregar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cargarDatos()
     End Sub
@@ -35,18 +35,22 @@ Public Class agregar
     End Sub
 
     ' Método para agregar los productos
-    Public Sub agregar()
+    Public Sub baja()
         If txtCantidad.Text <> "" AndAlso CInt(txtCantidad.Text) > 0 Then
             If cmbProducto.SelectedIndex <> -1 Then
                 Dim producto As String = cmbProducto.SelectedItem.ToString()
                 Dim cantidad As Integer = CInt(txtCantidad.Text)
+                Dim observacion As String = txtObservacion.Text.Trim().ToUpper()
 
                 Dim existencias As Integer = obtenerExistencias(producto)
 
-                If existencias >= 0 Then
-                    Dim nuevasExistencias As Integer = existencias + cantidad
+                If existencias >= cantidad Then
+                    Dim nuevasExistencias As Integer = existencias - cantidad
                     actualizarExistencias(producto, nuevasExistencias)
-                    MsgBox("Producto: " & producto & vbCrLf & "Cantidad agregada: " & cantidad & vbCrLf & "Existencias actuales: " & nuevasExistencias, vbInformation, "EXISTENCIAS ACTUALIZADAS")
+                    registrarHistorial(tipo, producto, cantidad, userid, observacion)
+                    MsgBox("Producto: " & producto & vbCrLf & "Cantidad dada de baja: " & cantidad & vbCrLf & "Existencias actuales: " & nuevasExistencias, vbInformation, "PRODUCTOS DADOS DE BAJA")
+                Else
+                    MsgBox("No hay suficientes existencias para dar de baja esa cantidad.", vbExclamation, "Existencias Insuficientes")
                 End If
             Else
                 MsgBox("Por favor, selecciona un producto.")
@@ -98,6 +102,49 @@ Public Class agregar
         End Using
     End Sub
 
+    Private Sub registrarHistorial(tipo As String, nombreProducto As String, cantidad As Integer, idVendedor As Integer, observacion As String)
+        Using connection As SQLiteConnection = DBConnection.GetConnection()
+            Try
+                connection.Open()
+
+                ' Obtener ID del producto
+                Dim queryId As String = "SELECT id FROM PRODUCTOS WHERE nombre = @nombre"
+                Dim cmdId As New SQLiteCommand(queryId, connection)
+                cmdId.Parameters.AddWithValue("@nombre", nombreProducto)
+
+                Dim idProducto As Integer = -1
+                Using reader = cmdId.ExecuteReader()
+                    If reader.Read() Then
+                        idProducto = Convert.ToInt32(reader("id"))
+                    End If
+                End Using
+
+                If idProducto = -1 Then
+                    MsgBox("No se encontró el producto en la base de datos.")
+                    Return
+                End If
+
+                ' Insertar en historial
+                Dim currentDate As String = DateTime.Now.ToString("yyyy-MM-dd HH:mm")
+                Dim insertQuery As String = "INSERT INTO HISTORIAL (ID_PRODUCTO,
+A_B, CANTIDAD, ID_VENDEDOR, OBSERVACIONES, FECHA) 
+VALUES (@id_Producto, @tipo, @cantidad, @idVendedor, @observaciones, @fecha)"
+                MsgBox(userid)
+                Dim cmdInsert As New SQLiteCommand(insertQuery, connection)
+                cmdInsert.Parameters.AddWithValue("@id_Producto", idProducto)
+                cmdInsert.Parameters.AddWithValue("@tipo", tipo)
+                cmdInsert.Parameters.AddWithValue("@cantidad", cantidad)
+                cmdInsert.Parameters.AddWithValue("@idVendedor", userid)
+                cmdInsert.Parameters.AddWithValue("@observaciones", observacion)
+                cmdInsert.Parameters.AddWithValue("@fecha", currentDate)
+                cmdInsert.ExecuteNonQuery()
+
+            Catch ex As Exception
+                MsgBox("Error al registrar historial: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
     ' Método para sumar la cantidad cuando se presiona el botón "+"
     Public Function sumar(valor As String) As Integer
         Dim cantidad As Integer
@@ -137,9 +184,10 @@ Public Class agregar
 
     ' Evento del botón "Agregar"
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        agregar()
+        baja()
         cmbProducto.Text = ""
         txtCantidad.Text = ""
+        txtObservacion.Text = ""
     End Sub
 
     ' Evento del botón "Cerrar sesión"
@@ -148,4 +196,3 @@ Public Class agregar
         Me.Close()
     End Sub
 End Class
-
