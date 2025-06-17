@@ -82,6 +82,11 @@ spos
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:spos.My.Resources.Resources.receipt_bill_invoice_price_payment_icon_187248">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:spos.My.Resources.Resources.reporte">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

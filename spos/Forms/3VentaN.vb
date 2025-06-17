@@ -175,11 +175,10 @@ Public Class VentaN
                         productoId = Convert.ToInt32(cmdProd.ExecuteScalar())
                     End Using
 
-                    Dim insertDetalle As String = "INSERT INTO DVENTA (venta_id, producto_id, nombre_producto, precio_unitario, cantidad, importe) VALUES (@venta_id, @producto_id, @nombre_producto, @precio_unitario, @cantidad, @importe)"
+                    Dim insertDetalle As String = "INSERT INTO DVENTA (venta_id, producto_id, precio_unitario, cantidad, importe) VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
                     Using cmdDet As New SQLiteCommand(insertDetalle, connection)
                         cmdDet.Parameters.AddWithValue("@venta_id", ventaId)
                         cmdDet.Parameters.AddWithValue("@producto_id", productoId)
-                        cmdDet.Parameters.AddWithValue("@nombre_producto", nombreProducto)
                         cmdDet.Parameters.AddWithValue("@precio_unitario", precioUnitario)
                         cmdDet.Parameters.AddWithValue("@cantidad", cantidad)
                         cmdDet.Parameters.AddWithValue("@importe", importe)

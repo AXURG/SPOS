@@ -1,4 +1,3 @@
-C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\data\LARIS.db
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\spos.exe.config
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\spos.exe
 C:\Users\aurg\Source\Repos\SPOS\spos\bin\Debug\spos.pdb
@@ -70,3 +69,5 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.xml
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.pdb
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6opcion.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6_2baja.resources
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos._6opcion.resources
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos._6_2baja.resources

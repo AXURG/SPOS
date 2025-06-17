@@ -5,7 +5,7 @@ Public Class Login
     ' Función para validar el inicio de sesión y guardar el ID del usuario
     Public Function Login(usr As String, pass As String) As Boolean
         ' Consulta SQL parametrizada
-        Dim query As String = "SELECT id FROM vendedores WHERE usuario = @usuario AND password = @password"
+        Dim query As String = "SELECT id FROM VENDEDORES WHERE usuario = @usuario AND password = @password"
 
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Using command As New SQLiteCommand(query, connection)

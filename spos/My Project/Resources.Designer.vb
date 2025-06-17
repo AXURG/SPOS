@@ -184,6 +184,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property receipt_bill_invoice_price_payment_icon_187248() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("receipt_bill_invoice_price_payment_icon_187248", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property reporte() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("reporte", resourceCulture)
