@@ -215,7 +215,7 @@ Partial Class principal
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.spos.My.Resources.Resources.btngastos
-        Me.PictureBox2.Location = New System.Drawing.Point(876, 296)
+        Me.PictureBox2.Location = New System.Drawing.Point(853, 296)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(147, 116)
@@ -249,7 +249,7 @@ Partial Class principal
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(858, 422)
+        Me.Label4.Location = New System.Drawing.Point(835, 422)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(201, 25)
@@ -285,17 +285,17 @@ Partial Class principal
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label7.Location = New System.Drawing.Point(1058, 333)
+        Me.Label7.Location = New System.Drawing.Point(1032, 328)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(243, 25)
+        Me.Label7.Size = New System.Drawing.Size(272, 25)
         Me.Label7.TabIndex = 24
-        Me.Label7.Text = "HISTORIAL INVENTARIO"
+        Me.Label7.Text = "REGISTRO DE INVENTARIO"
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.spos.My.Resources.Resources.reporte
-        Me.PictureBox5.Location = New System.Drawing.Point(1101, 198)
+        Me.PictureBox5.Location = New System.Drawing.Point(1092, 198)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(147, 116)
