@@ -66,7 +66,7 @@ Partial Class principal
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.BtnSesion)
         Me.Panel1.Location = New System.Drawing.Point(-16, -6)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(466, 959)
         Me.Panel1.TabIndex = 1
@@ -78,7 +78,7 @@ Partial Class principal
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Button1.Location = New System.Drawing.Point(52, 353)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(372, 117)
         Me.Button1.TabIndex = 7
@@ -88,7 +88,7 @@ Partial Class principal
         'Panel2
         '
         Me.Panel2.Location = New System.Drawing.Point(444, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1592, 75)
         Me.Panel2.TabIndex = 4
@@ -110,7 +110,7 @@ Partial Class principal
         '
         Me.PictureBox1.Image = Global.spos.My.Resources.Resources.user_icon_icons_com_66546
         Me.PictureBox1.Location = New System.Drawing.Point(120, 23)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(196, 134)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -124,7 +124,7 @@ Partial Class principal
         Me.BtnSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnSesion.Location = New System.Drawing.Point(120, 631)
-        Me.BtnSesion.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BtnSesion.Margin = New System.Windows.Forms.Padding(6)
         Me.BtnSesion.Name = "BtnSesion"
         Me.BtnSesion.Size = New System.Drawing.Size(218, 103)
         Me.BtnSesion.TabIndex = 2
@@ -183,7 +183,7 @@ Partial Class principal
         '
         Me.PictureBox6.Image = Global.spos.My.Resources.Resources.pago
         Me.PictureBox6.Location = New System.Drawing.Point(896, 141)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(220, 181)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -195,7 +195,7 @@ Partial Class principal
         '
         Me.PictureBox4.Image = Global.spos.My.Resources.Resources.btnproveedor
         Me.PictureBox4.Location = New System.Drawing.Point(896, 462)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(220, 181)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -207,7 +207,7 @@ Partial Class principal
         '
         Me.PictureBox3.Image = Global.spos.My.Resources.Resources.btninventario
         Me.PictureBox3.Location = New System.Drawing.Point(549, 462)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(220, 181)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -219,7 +219,7 @@ Partial Class principal
         '
         Me.PictureBox2.Image = Global.spos.My.Resources.Resources.btngastos
         Me.PictureBox2.Location = New System.Drawing.Point(1280, 462)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(220, 181)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -231,7 +231,7 @@ Partial Class principal
         '
         Me.BtnSellNew.Image = Global.spos.My.Resources.Resources.ingresara
         Me.BtnSellNew.Location = New System.Drawing.Point(546, 141)
-        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(6)
         Me.BtnSellNew.Name = "BtnSellNew"
         Me.BtnSellNew.Size = New System.Drawing.Size(220, 181)
         Me.BtnSellNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -262,7 +262,7 @@ Partial Class principal
         '
         Me.btnClientes.Image = Global.spos.My.Resources.Resources.btnclientes
         Me.btnClientes.Location = New System.Drawing.Point(1294, 122)
-        Me.btnClientes.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnClientes.Margin = New System.Windows.Forms.Padding(6)
         Me.btnClientes.Name = "btnClientes"
         Me.btnClientes.Size = New System.Drawing.Size(220, 181)
         Me.btnClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -298,7 +298,7 @@ Partial Class principal
         '
         Me.PictureBox5.Image = Global.spos.My.Resources.Resources.reporte
         Me.PictureBox5.Location = New System.Drawing.Point(1717, 106)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(220, 181)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -314,9 +314,10 @@ Partial Class principal
         Me.Label8.Location = New System.Drawing.Point(1689, 659)
         Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(320, 37)
+        Me.Label8.Size = New System.Drawing.Size(363, 37)
         Me.Label8.TabIndex = 27
-        Me.Label8.Text = "REGISTRO VENTAS"
+        Me.Label8.Text = "REGISTRO FACTURAS"
+        Me.Label8.Visible = False
         '
         'PictureBox7
         '
@@ -329,6 +330,7 @@ Partial Class principal
         Me.PictureBox7.TabIndex = 26
         Me.PictureBox7.TabStop = False
         Me.PictureBox7.Tag = ""
+        Me.PictureBox7.Visible = False
         '
         'principal
         '
@@ -356,7 +358,7 @@ Partial Class principal
         Me.Controls.Add(Me.BtnSellNew)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "principal"
         Me.Text = "principal"
         Me.TopMost = True

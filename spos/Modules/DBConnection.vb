@@ -5,7 +5,6 @@ Imports System.Data.SQLite   ' Para usar SQLiteConnection
 Module DBConnection
     Public Function GetConnectionString() As String
         Dim dbPath As String = Path.Combine(Application.StartupPath & "\data\LARIS.db")
-        MsgBox(dbPath)
         Return "Data Source=" & dbPath & ";Version=3;"
     End Function
 

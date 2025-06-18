@@ -18,7 +18,6 @@ C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos._8_1agregarCliente_.resource
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos._8_2editarCliente.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.facturacion.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.gastos.resources
-C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.historialVentas.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.inventario.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.Login.resources
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.principal.resources
@@ -71,3 +70,9 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6opcion.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._6_2baja.resources
 C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos._6opcion.resources
 C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos._6_2baja.resources
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos._10historialFacturas.resources
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.historialFacturas.resources
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\spos.exe.manifest
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\spos.application
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.exe.manifest
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.application

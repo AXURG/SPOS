@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        historialVentas.Show()
+        historialFacturas.Show()
         Me.Close()
     End Sub
 
@@ -32,7 +32,7 @@
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
-        historialVentas.Show()
+        historialFacturas.Show()
         Me.Close()
     End Sub
 
@@ -42,7 +42,7 @@
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
-        historialVentas.Show()
+        historialFacturas.Show()
         Me.Close()
     End Sub
 
@@ -69,5 +69,9 @@
     Private Sub PictureBox5_Click_1(sender As Object, e As EventArgs) Handles PictureBox5.Click
         _7historialInventario.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        _10historialFacturas.Show()
     End Sub
 End Class

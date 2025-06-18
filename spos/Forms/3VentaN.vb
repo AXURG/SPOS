@@ -13,6 +13,20 @@ Public Class VentaN
         CargarProductos()
     End Sub
 
+    Private Function ObtenerUltimoIDVenta() As Integer
+        Using conn As SQLiteConnection = DBConnection.GetConnection()
+            conn.Open()
+            Dim cmd As New SQLiteCommand("SELECT MAX(id) FROM ventas", conn)
+            Dim resultado = cmd.ExecuteScalar()
+            If resultado IsNot Nothing AndAlso Not IsDBNull(resultado) Then
+                Return Convert.ToInt32(resultado)
+            Else
+                Return 0 ' En caso de que no haya ventas aún
+            End If
+        End Using
+    End Function
+
+
     Private Sub CargarProductos()
         Dim query As String = "SELECT nombre FROM PRODUCTOS"
 
@@ -29,6 +43,7 @@ Public Class VentaN
     End Sub
 
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+
         Dim producto As String = CmbProducto.Text
         Dim piezas As Integer
         Dim precio As Decimal
@@ -51,8 +66,31 @@ Public Class VentaN
                 connection.Open()
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     If reader.Read() Then
-                        precio = Convert.ToDecimal(reader("precio"))
-                        existencias = Convert.ToInt32(reader("existencia"))
+                        If Not reader.IsDBNull(reader.GetOrdinal("precio")) Then
+                            If Not reader.IsDBNull(reader.GetOrdinal("precio")) Then
+                                Dim precioStr As String = reader("precio").ToString().Trim()
+                                If Decimal.TryParse(precioStr, NumberStyles.Any, CultureInfo.InvariantCulture, precio) Then
+                                    ' precio ya está correctamente convertido
+                                Else
+                                    MsgBox("El precio del producto no se pudo convertir: " & precioStr, vbExclamation)
+                                    Return
+                                End If
+                            Else
+                                MsgBox("El precio es NULL en la base de datos.", vbExclamation)
+                                Return
+                            End If
+
+                        Else
+                            MsgBox("El precio del producto no está definido.", vbExclamation)
+                            Return
+                        End If
+
+                        If Not reader.IsDBNull(reader.GetOrdinal("existencia")) Then
+                            existencias = Convert.ToInt32(reader("existencia"))
+                        Else
+                            MsgBox("La existencia del producto no está definida.", vbExclamation)
+                            Return
+                        End If
                     Else
                         MsgBox("El producto no existe.", vbExclamation)
                         Return
@@ -61,7 +99,11 @@ Public Class VentaN
             End Using
         End Using
 
-        Dim existenciasReservadas = If(ProductosReservados.ContainsKey(producto), ProductosReservados(producto), 0)
+        ' Aquí continúa el código para verificar existencias, agregar a la venta, etc.
+
+
+
+    Dim existenciasReservadas = If(ProductosReservados.ContainsKey(producto), ProductosReservados(producto), 0)
         If piezas > existencias - existenciasReservadas Then
             MsgBox("No hay suficientes existencias.", vbExclamation)
             Return
@@ -124,13 +166,27 @@ Public Class VentaN
             Dim facturar = MsgBox("¿Se desea facturar?", vbYesNo, "Facturación")
             Dim facturacionFlag As Integer = If(facturar = vbYes, 1, 0)
 
+            ' Guardar venta en base de datos
             RegistrarVenta(facturacionFlag)
+
+            ' Obtener ID de la venta recién registrada
+            Dim ultimoID As Integer = ObtenerUltimoIDVenta()
+
+            ' Si se desea facturar, abrir formulario
+            If facturacionFlag = 1 Then
+                Dim frmFact As New Facturacion()
+                frmFact.IDVenta = ultimoID
+                frmFact.ShowDialog()
+            End If
+
             MsgBox("Venta finalizada exitosamente.", vbInformation)
             LimpiarFormulario()
             ProductosReservados.Clear()
             Subtotal = 0
         End If
     End Sub
+
+
 
     Private Sub RegistrarVenta(facturacion As Integer)
         Using connection As SQLiteConnection = DBConnection.GetConnection()
