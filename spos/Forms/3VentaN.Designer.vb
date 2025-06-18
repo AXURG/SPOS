@@ -165,10 +165,10 @@ Partial Class VentaN
         Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(360, 171)
+        Me.btnAgregar.Location = New System.Drawing.Point(337, 171)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(215, 58)
+        Me.btnAgregar.Size = New System.Drawing.Size(238, 58)
         Me.btnAgregar.TabIndex = 13
         Me.btnAgregar.Text = "AGREGAR"
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -191,10 +191,10 @@ Partial Class VentaN
         Me.BtnFinalizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnFinalizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFinalizar.Location = New System.Drawing.Point(826, 171)
+        Me.BtnFinalizar.Location = New System.Drawing.Point(803, 171)
         Me.BtnFinalizar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnFinalizar.Name = "BtnFinalizar"
-        Me.BtnFinalizar.Size = New System.Drawing.Size(215, 58)
+        Me.BtnFinalizar.Size = New System.Drawing.Size(238, 58)
         Me.BtnFinalizar.TabIndex = 21
         Me.BtnFinalizar.Text = "FINALIZAR VENTA"
         Me.BtnFinalizar.UseVisualStyleBackColor = False
