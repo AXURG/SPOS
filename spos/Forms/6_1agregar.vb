@@ -128,7 +128,6 @@ Public Class agregar
                 Dim insertQuery As String = "INSERT INTO HISTORIAL (ID_PRODUCTO,
 A_B, CANTIDAD, ID_VENDEDOR, OBSERVACIONES, FECHA) 
 VALUES (@id_Producto, @tipo, @cantidad, @idVendedor, @observaciones, @fecha)"
-                MsgBox(userid)
                 Dim cmdInsert As New SQLiteCommand(insertQuery, connection)
                 cmdInsert.Parameters.AddWithValue("@id_Producto", idProducto)
                 cmdInsert.Parameters.AddWithValue("@tipo", tipo)

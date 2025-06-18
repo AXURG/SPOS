@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="spos.exe" size="534488">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="spos.exe" size="536024">
       <assemblyIdentity name="spos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jRdMEzbKCoQGBJXqJ54D9Ob3QIc9brFlChzRsSlSNuQ=</dsig:DigestValue>
+        <dsig:DigestValue>bg/DoVVv5OdzM/idlHUpVQCJigqHuLe9bAGlCzlxfbc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -131,7 +131,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dJw5rztlCWQLKZW24ALkyzXlKtckZ/Gzfu1k14iB7vs=</dsig:DigestValue>
+      <dsig:DigestValue>bfQGmrvfvh6NenR+evn3MixKZJxRiJfX+C8bQ6QwTiU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\cliente.png" size="21666">

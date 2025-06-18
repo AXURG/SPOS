@@ -43,7 +43,7 @@ Partial Class historialFacturas
         Me.dtgv_ventas.Name = "dtgv_ventas"
         Me.dtgv_ventas.ReadOnly = True
         Me.dtgv_ventas.RowHeadersWidth = 51
-        Me.dtgv_ventas.Size = New System.Drawing.Size(828, 652)
+        Me.dtgv_ventas.Size = New System.Drawing.Size(1151, 700)
         Me.dtgv_ventas.TabIndex = 5
         '
         'BtnRegresar
@@ -119,7 +119,7 @@ Partial Class historialFacturas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1103, 740)
+        Me.ClientSize = New System.Drawing.Size(1399, 788)
         Me.Controls.Add(Me.BtnSellNew)
         Me.Controls.Add(Me.btnRegresarConsulta)
         Me.Controls.Add(Me.btnVerDetalles)

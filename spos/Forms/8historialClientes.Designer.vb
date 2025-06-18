@@ -39,7 +39,7 @@ Partial Class _8historialClientes
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAgregar.Location = New System.Drawing.Point(25, 502)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(141, 104)
         Me.btnAgregar.TabIndex = 11
@@ -55,12 +55,12 @@ Partial Class _8historialClientes
         Me.dgv_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical
         Me.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_clientes.Cursor = System.Windows.Forms.Cursors.Default
-        Me.dgv_clientes.Location = New System.Drawing.Point(188, 52)
-        Me.dgv_clientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgv_clientes.Location = New System.Drawing.Point(219, 81)
+        Me.dgv_clientes.Margin = New System.Windows.Forms.Padding(4)
         Me.dgv_clientes.Name = "dgv_clientes"
         Me.dgv_clientes.ReadOnly = True
         Me.dgv_clientes.RowHeadersWidth = 51
-        Me.dgv_clientes.Size = New System.Drawing.Size(833, 710)
+        Me.dgv_clientes.Size = New System.Drawing.Size(1188, 710)
         Me.dgv_clientes.TabIndex = 10
         '
         'BtnRegresar
@@ -70,7 +70,7 @@ Partial Class _8historialClientes
         Me.BtnRegresar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnRegresar.Location = New System.Drawing.Point(25, 295)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnRegresar.Name = "BtnRegresar"
         Me.BtnRegresar.Size = New System.Drawing.Size(141, 66)
         Me.BtnRegresar.TabIndex = 9
@@ -80,12 +80,12 @@ Partial Class _8historialClientes
         'LblUser
         '
         Me.LblUser.CausesValidation = False
-        Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LblUser.Location = New System.Drawing.Point(423, 20)
+        Me.LblUser.Location = New System.Drawing.Point(563, 22)
         Me.LblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblUser.Name = "LblUser"
-        Me.LblUser.Size = New System.Drawing.Size(312, 29)
+        Me.LblUser.Size = New System.Drawing.Size(445, 39)
         Me.LblUser.TabIndex = 12
         Me.LblUser.Text = "REGISTRO CLIENTES"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -97,7 +97,7 @@ Partial Class _8historialClientes
         Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnEditar.Location = New System.Drawing.Point(25, 406)
-        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(141, 47)
         Me.btnEditar.TabIndex = 22
@@ -108,7 +108,7 @@ Partial Class _8historialClientes
         '
         Me.btnClientes.Image = Global.spos.My.Resources.Resources.btnclientes
         Me.btnClientes.Location = New System.Drawing.Point(25, 135)
-        Me.btnClientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClientes.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClientes.Name = "btnClientes"
         Me.btnClientes.Size = New System.Drawing.Size(147, 116)
         Me.btnClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -121,7 +121,7 @@ Partial Class _8historialClientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1045, 794)
+        Me.ClientSize = New System.Drawing.Size(1420, 806)
         Me.Controls.Add(Me.btnClientes)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.LblUser)

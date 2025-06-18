@@ -64,12 +64,12 @@ Partial Class _6_2baja
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAgregar.Location = New System.Drawing.Point(323, 415)
+        Me.btnAgregar.Location = New System.Drawing.Point(323, 411)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(220, 47)
         Me.btnAgregar.TabIndex = 32
-        Me.btnAgregar.Text = "AGREGAR"
+        Me.btnAgregar.Text = "DAR DE BAJA"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'btnMenos
@@ -179,7 +179,7 @@ Partial Class _6_2baja
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(776, 486)
+        Me.ClientSize = New System.Drawing.Size(799, 487)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.txtObservacion)
         Me.Controls.Add(Me.Label3)

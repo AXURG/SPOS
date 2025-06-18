@@ -1,7 +1,9 @@
-﻿Public Class principal
+﻿Imports Microsoft.VisualBasic.ApplicationServices
+
+Public Class principal
 
     Private Sub BtnSesion_Click(sender As Object, e As EventArgs) Handles BtnSesion.Click
-        LOGIN.Show()
+        Login.Show()
         Me.Close()
     End Sub
 
@@ -57,7 +59,7 @@
         End If
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) 
+    Private Sub Label7_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -73,5 +75,9 @@
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
         _10historialFacturas.Show()
+    End Sub
+
+    Private Sub principal_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        LblUser.Text = "Bienvenid@ " & session.user_vendedor
     End Sub
 End Class

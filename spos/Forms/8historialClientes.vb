@@ -13,7 +13,8 @@ Public Class _8historialClientes
                     correo AS [Correo],
                     ntelefono AS [Teléfono],
 rfc AS [RFC]
-                FROM CLIENTES"
+                FROM CLIENTES
+WHERE id<>0"
                 Using adapter As New SQLiteDataAdapter(query, connection)
                     Dim dbTable As New DataTable()
                     adapter.Fill(dbTable)

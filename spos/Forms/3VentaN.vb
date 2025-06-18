@@ -157,9 +157,9 @@ Public Class VentaN
             Return
         End If
 
-        Dim confirmacionVenta = MsgBox("¿Está seguro de terminar la venta? No se podrá revertir.", vbYesNo + vbQuestion, "Finalizar Vemta")
+        Dim confirmacionVenta = MsgBox("¿Está seguro de terminar la venta? No se podrá revertir.", vbYesNo + vbQuestion, "Finalizar Venta")
         If confirmacionVenta = vbYes Then
-            Dim facturar = MsgBox("¿Se desea facturar? Esta Accion es Irreversible", vbYesNo + vbExclamation, "Facturación")
+            Dim facturar = MsgBox("¿Se desea facturar? Esta Acción es Irreversible", vbYesNo + vbExclamation, "Facturación")
             Dim facturacionFlag As Integer = If(facturar = vbYes, 1, 0)
             RegistrarVenta(facturacionFlag, session.userid)
 
@@ -188,7 +188,8 @@ Public Class VentaN
             Dim transaction As SQLiteTransaction = connection.BeginTransaction()
 
             Try
-                Dim insertVenta As String = "INSERT INTO VENTAS (fecha, total, total_productos, facturacion, vendedor_id, cliente_id) VALUES (@fecha, @total, @total_productos, @facturacion, @vendedor_id, @cliente_id)"
+                Dim insertVenta As String = "INSERT INTO VENTAS (fecha, total, total_productos, facturacion, vendedor_id, cliente_id) 
+VALUES (@fecha, @total, @total_productos, @facturacion, @vendedor_id, @cliente_id)"
                 Using cmdVenta As New SQLiteCommand(insertVenta, connection)
                     cmdVenta.Parameters.AddWithValue("@fecha", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
                     cmdVenta.Parameters.AddWithValue("@total", Subtotal)
@@ -225,7 +226,8 @@ Public Class VentaN
                         productoId = Convert.ToInt32(cmdProd.ExecuteScalar())
                     End Using
 
-                    Dim insertDetalle As String = "INSERT INTO DVENTA (venta_id, producto_id, precio_unitario, cantidad, importe) VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
+                    Dim insertDetalle As String = "INSERT INTO DVENTA (venta_id, producto_id, precio_unitario, cantidad, importe) 
+VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
                     Using cmdDet As New SQLiteCommand(insertDetalle, connection)
                         cmdDet.Parameters.AddWithValue("@venta_id", ventaId)
                         cmdDet.Parameters.AddWithValue("@producto_id", productoId)

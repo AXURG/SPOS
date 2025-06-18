@@ -84,3 +84,4 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Release\spos.vbproj.Up2Date
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Release\spos.exe
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Release\spos.xml
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Release\spos.pdb
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Release\spos.exe.config

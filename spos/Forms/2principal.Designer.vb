@@ -281,9 +281,9 @@ Partial Class principal
         Me.Label5.Location = New System.Drawing.Point(813, 198)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(252, 25)
+        Me.Label5.Size = New System.Drawing.Size(249, 25)
         Me.Label5.TabIndex = 23
-        Me.Label5.Text = "HISTORIAL DE CLIENTES"
+        Me.Label5.Text = "REGISTRO DE CLIENTES"
         '
         'Label7
         '
@@ -300,7 +300,7 @@ Partial Class principal
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.spos.My.Resources.Resources.reporte
-        Me.PictureBox5.Location = New System.Drawing.Point(1145, 68)
+        Me.PictureBox5.Location = New System.Drawing.Point(1145, 78)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(147, 116)
@@ -341,7 +341,7 @@ Partial Class principal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.SlateGray
-        Me.ClientSize = New System.Drawing.Size(1377, 513)
+        Me.ClientSize = New System.Drawing.Size(1377, 531)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox5)

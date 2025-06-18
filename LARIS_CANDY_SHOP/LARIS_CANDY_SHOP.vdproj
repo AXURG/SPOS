@@ -607,7 +607,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LARIS_CANDY_SHOP"
         "ProductCode" = "8:{E0BD41E0-9265-442B-A69A-510AC123BBAA}"
-        "PackageCode" = "8:{D0E3A8ED-7295-4471-8CD2-8D3EC1C6BA53}"
+        "PackageCode" = "8:{D04D4ED9-E04E-4BE1-9147-8A878F3B2757}"
         "UpgradeCode" = "8:{828A45AA-D99D-4F61-9BD1-147C70D9B40D}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"

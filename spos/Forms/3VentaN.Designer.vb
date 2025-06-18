@@ -39,14 +39,17 @@ Partial Class VentaN
         Me.BtnFinalizar = New System.Windows.Forms.Button()
         Me.BtnEliminar = New System.Windows.Forms.Button()
         Me.BtnRegresar = New System.Windows.Forms.Button()
+        Me.BtnSellNew = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.DgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BtnSellNew, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CmbProducto
         '
         Me.CmbProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmbProducto.FormattingEnabled = True
-        Me.CmbProducto.Location = New System.Drawing.Point(275, 84)
+        Me.CmbProducto.Location = New System.Drawing.Point(345, 90)
         Me.CmbProducto.Margin = New System.Windows.Forms.Padding(4)
         Me.CmbProducto.Name = "CmbProducto"
         Me.CmbProducto.Size = New System.Drawing.Size(263, 37)
@@ -57,7 +60,7 @@ Partial Class VentaN
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(101, 87)
+        Me.Label1.Location = New System.Drawing.Point(171, 93)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(159, 29)
@@ -67,7 +70,7 @@ Partial Class VentaN
         'TxtPZ
         '
         Me.TxtPZ.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPZ.Location = New System.Drawing.Point(681, 91)
+        Me.TxtPZ.Location = New System.Drawing.Point(751, 97)
         Me.TxtPZ.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtPZ.Name = "TxtPZ"
         Me.TxtPZ.Size = New System.Drawing.Size(164, 34)
@@ -78,7 +81,7 @@ Partial Class VentaN
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(564, 94)
+        Me.Label2.Location = New System.Drawing.Point(634, 100)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 29)
@@ -90,7 +93,7 @@ Partial Class VentaN
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(917, 96)
+        Me.Label4.Location = New System.Drawing.Point(987, 102)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(97, 29)
@@ -101,7 +104,7 @@ Partial Class VentaN
         '
         Me.TxtTotal.Enabled = False
         Me.TxtTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotal.Location = New System.Drawing.Point(1035, 94)
+        Me.TxtTotal.Location = New System.Drawing.Point(1105, 100)
         Me.TxtTotal.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtTotal.Name = "TxtTotal"
         Me.TxtTotal.Size = New System.Drawing.Size(164, 34)
@@ -115,7 +118,7 @@ Partial Class VentaN
         Me.DgvProductos.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
         Me.DgvProductos.ColumnHeadersHeight = 29
         Me.DgvProductos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.producto, Me.piezas, Me.precio, Me.total})
-        Me.DgvProductos.Location = New System.Drawing.Point(16, 247)
+        Me.DgvProductos.Location = New System.Drawing.Point(44, 253)
         Me.DgvProductos.Margin = New System.Windows.Forms.Padding(4)
         Me.DgvProductos.Name = "DgvProductos"
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -127,7 +130,7 @@ Partial Class VentaN
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DgvProductos.RowHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvProductos.RowHeadersWidth = 51
-        Me.DgvProductos.Size = New System.Drawing.Size(1288, 341)
+        Me.DgvProductos.Size = New System.Drawing.Size(1348, 400)
         Me.DgvProductos.TabIndex = 12
         '
         'producto
@@ -161,10 +164,11 @@ Partial Class VentaN
         '
         Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Location = New System.Drawing.Point(313, 159)
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Location = New System.Drawing.Point(360, 171)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(196, 58)
+        Me.btnAgregar.Size = New System.Drawing.Size(215, 58)
         Me.btnAgregar.TabIndex = 13
         Me.btnAgregar.Text = "AGREGAR"
         Me.btnAgregar.UseVisualStyleBackColor = False
@@ -174,7 +178,7 @@ Partial Class VentaN
         Me.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCerrar.ForeColor = System.Drawing.Color.Transparent
-        Me.BtnCerrar.Location = New System.Drawing.Point(1247, 15)
+        Me.BtnCerrar.Location = New System.Drawing.Point(1352, 23)
         Me.BtnCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnCerrar.Name = "BtnCerrar"
         Me.BtnCerrar.Size = New System.Drawing.Size(40, 39)
@@ -186,10 +190,11 @@ Partial Class VentaN
         '
         Me.BtnFinalizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnFinalizar.Location = New System.Drawing.Point(779, 159)
+        Me.BtnFinalizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFinalizar.Location = New System.Drawing.Point(826, 171)
         Me.BtnFinalizar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnFinalizar.Name = "BtnFinalizar"
-        Me.BtnFinalizar.Size = New System.Drawing.Size(196, 58)
+        Me.BtnFinalizar.Size = New System.Drawing.Size(215, 58)
         Me.BtnFinalizar.TabIndex = 21
         Me.BtnFinalizar.Text = "FINALIZAR VENTA"
         Me.BtnFinalizar.UseVisualStyleBackColor = False
@@ -200,7 +205,7 @@ Partial Class VentaN
         Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnEliminar.Location = New System.Drawing.Point(569, 597)
+        Me.BtnEliminar.Location = New System.Drawing.Point(665, 671)
         Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(141, 66)
@@ -213,7 +218,7 @@ Partial Class VentaN
         Me.BtnRegresar.BackColor = System.Drawing.Color.Tomato
         Me.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnRegresar.Location = New System.Drawing.Point(59, 165)
+        Me.BtnRegresar.Location = New System.Drawing.Point(129, 171)
         Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnRegresar.Name = "BtnRegresar"
         Me.BtnRegresar.Size = New System.Drawing.Size(103, 47)
@@ -221,12 +226,38 @@ Partial Class VentaN
         Me.BtnRegresar.Text = "REGRESAR"
         Me.BtnRegresar.UseVisualStyleBackColor = False
         '
+        'BtnSellNew
+        '
+        Me.BtnSellNew.Image = Global.spos.My.Resources.Resources.ingresara
+        Me.BtnSellNew.Location = New System.Drawing.Point(481, 4)
+        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSellNew.Name = "BtnSellNew"
+        Me.BtnSellNew.Size = New System.Drawing.Size(103, 67)
+        Me.BtnSellNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BtnSellNew.TabIndex = 24
+        Me.BtnSellNew.TabStop = False
+        Me.BtnSellNew.Tag = ""
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label3.Location = New System.Drawing.Point(592, 23)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(261, 38)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "VENTA NUEVA"
+        '
         'VentaN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1320, 678)
+        Me.ClientSize = New System.Drawing.Size(1418, 750)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.BtnSellNew)
         Me.Controls.Add(Me.BtnRegresar)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.BtnFinalizar)
@@ -245,6 +276,7 @@ Partial Class VentaN
         Me.Name = "VentaN"
         Me.Text = "VentaN"
         CType(Me.DgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BtnSellNew, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -265,4 +297,6 @@ Partial Class VentaN
     Friend WithEvents total As DataGridViewTextBoxColumn
     Friend WithEvents BtnEliminar As Button
     Friend WithEvents BtnRegresar As Button
+    Friend WithEvents BtnSellNew As PictureBox
+    Friend WithEvents Label3 As Label
 End Class
