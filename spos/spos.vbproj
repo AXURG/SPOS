@@ -105,6 +105,9 @@
     </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.9.0.6\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -130,6 +133,18 @@
       <DependentUpon>10historialFacturas.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\10historialFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2principal.Designer.vb">
+      <DependentUpon>2principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3VentaN.Designer.vb">
+      <DependentUpon>3VentaN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3VentaN.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\6inventario.Designer.vb">
@@ -174,6 +189,12 @@
     <Compile Include="Forms\8_2editarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\agregarCliente_Fac.Designer.vb">
+      <DependentUpon>agregarCliente_Fac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\agregarCliente_Fac.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\facturacion.Designer.vb">
       <DependentUpon>facturacion.vb</DependentUpon>
     </Compile>
@@ -202,18 +223,6 @@
       <DependentUpon>1Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\1Login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\2principal.Designer.vb">
-      <DependentUpon>2principal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\2principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\3VentaN.Designer.vb">
-      <DependentUpon>3VentaN.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\3VentaN.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\session.vb" />
@@ -245,6 +254,12 @@
     <EmbeddedResource Include="Forms\10historialFacturas.resx">
       <DependentUpon>10historialFacturas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2principal.resx">
+      <DependentUpon>2principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3VentaN.resx">
+      <DependentUpon>3VentaN.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\6inventario.resx">
       <DependentUpon>6inventario.vb</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +281,9 @@
     <EmbeddedResource Include="Forms\8_2editarCliente.resx">
       <DependentUpon>8_2editarCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\agregarCliente_Fac.resx">
+      <DependentUpon>agregarCliente_Fac.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\facturacion.resx">
       <DependentUpon>facturacion.vb</DependentUpon>
     </EmbeddedResource>
@@ -281,12 +299,6 @@
     <EmbeddedResource Include="Forms\1Login.resx">
       <DependentUpon>1Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\2principal.resx">
-      <DependentUpon>2principal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\3VentaN.resx">
-      <DependentUpon>3VentaN.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\shopConfig.resx">
       <DependentUpon>shopConfig.vb</DependentUpon>
     </EmbeddedResource>
@@ -298,7 +310,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\LARIS.db" />
+    <Content Include="data\LARIS.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

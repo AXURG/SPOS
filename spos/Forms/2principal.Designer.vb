@@ -22,6 +22,7 @@ Partial Class principal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(principal))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -65,10 +66,10 @@ Partial Class principal
         Me.Panel1.Controls.Add(Me.LblUser)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.BtnSesion)
-        Me.Panel1.Location = New System.Drawing.Point(-16, -6)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
+        Me.Panel1.Location = New System.Drawing.Point(-11, -4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(466, 959)
+        Me.Panel1.Size = New System.Drawing.Size(311, 614)
         Me.Panel1.TabIndex = 1
         '
         'Button1
@@ -77,20 +78,21 @@ Partial Class principal
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button1.Location = New System.Drawing.Point(52, 353)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(6)
+        Me.Button1.Location = New System.Drawing.Point(35, 226)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(372, 117)
+        Me.Button1.Size = New System.Drawing.Size(248, 75)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "DATOS DE LA EMPRESA"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
         '
         'Panel2
         '
-        Me.Panel2.Location = New System.Drawing.Point(444, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(6)
+        Me.Panel2.Location = New System.Drawing.Point(296, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1592, 75)
+        Me.Panel2.Size = New System.Drawing.Size(1061, 48)
         Me.Panel2.TabIndex = 4
         '
         'LblUser
@@ -98,10 +100,10 @@ Partial Class principal
         Me.LblUser.CausesValidation = False
         Me.LblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUser.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.LblUser.Location = New System.Drawing.Point(24, 183)
-        Me.LblUser.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.LblUser.Location = New System.Drawing.Point(16, 117)
+        Me.LblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblUser.Name = "LblUser"
-        Me.LblUser.Size = New System.Drawing.Size(400, 39)
+        Me.LblUser.Size = New System.Drawing.Size(267, 25)
         Me.LblUser.TabIndex = 4
         Me.LblUser.Text = "USUARIO"
         Me.LblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -109,10 +111,10 @@ Partial Class principal
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.spos.My.Resources.Resources.user_icon_icons_com_66546
-        Me.PictureBox1.Location = New System.Drawing.Point(120, 23)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox1.Location = New System.Drawing.Point(80, 15)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(196, 134)
+        Me.PictureBox1.Size = New System.Drawing.Size(131, 86)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -123,10 +125,10 @@ Partial Class principal
         Me.BtnSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnSesion.Location = New System.Drawing.Point(120, 631)
-        Me.BtnSesion.Margin = New System.Windows.Forms.Padding(6)
+        Me.BtnSesion.Location = New System.Drawing.Point(80, 385)
+        Me.BtnSesion.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnSesion.Name = "BtnSesion"
-        Me.BtnSesion.Size = New System.Drawing.Size(218, 103)
+        Me.BtnSesion.Size = New System.Drawing.Size(145, 66)
         Me.BtnSesion.TabIndex = 2
         Me.BtnSesion.Text = "CERRAR SESION"
         Me.BtnSesion.UseVisualStyleBackColor = False
@@ -136,10 +138,10 @@ Partial Class principal
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(538, 328)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Location = New System.Drawing.Point(359, 210)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(247, 37)
+        Me.Label1.Size = New System.Drawing.Size(154, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "VENTA NUEVA"
         '
@@ -148,10 +150,10 @@ Partial Class principal
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(522, 659)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(348, 422)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(287, 37)
+        Me.Label2.Size = New System.Drawing.Size(178, 25)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "VER INVENTARIO"
         '
@@ -160,10 +162,10 @@ Partial Class principal
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(926, 328)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(617, 210)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(151, 37)
+        Me.Label3.Size = New System.Drawing.Size(98, 25)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "GASTOS"
         '
@@ -172,20 +174,20 @@ Partial Class principal
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label6.Location = New System.Drawing.Point(854, 659)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label6.Location = New System.Drawing.Point(569, 422)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(338, 37)
+        Me.Label6.Size = New System.Drawing.Size(210, 25)
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "EDITAR INVENTARIO"
         '
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.spos.My.Resources.Resources.pago
-        Me.PictureBox6.Location = New System.Drawing.Point(896, 141)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox6.Location = New System.Drawing.Point(597, 90)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox6.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 19
         Me.PictureBox6.TabStop = False
@@ -194,10 +196,10 @@ Partial Class principal
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.spos.My.Resources.Resources.btnproveedor
-        Me.PictureBox4.Location = New System.Drawing.Point(896, 462)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox4.Location = New System.Drawing.Point(597, 296)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox4.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 14
         Me.PictureBox4.TabStop = False
@@ -206,10 +208,10 @@ Partial Class principal
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.spos.My.Resources.Resources.btninventario
-        Me.PictureBox3.Location = New System.Drawing.Point(549, 462)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox3.Location = New System.Drawing.Point(366, 296)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox3.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
@@ -218,10 +220,10 @@ Partial Class principal
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.spos.My.Resources.Resources.btngastos
-        Me.PictureBox2.Location = New System.Drawing.Point(1280, 462)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox2.Location = New System.Drawing.Point(853, 296)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox2.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -230,10 +232,10 @@ Partial Class principal
         'BtnSellNew
         '
         Me.BtnSellNew.Image = Global.spos.My.Resources.Resources.ingresara
-        Me.BtnSellNew.Location = New System.Drawing.Point(546, 141)
-        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(6)
+        Me.BtnSellNew.Location = New System.Drawing.Point(364, 90)
+        Me.BtnSellNew.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnSellNew.Name = "BtnSellNew"
-        Me.BtnSellNew.Size = New System.Drawing.Size(220, 181)
+        Me.BtnSellNew.Size = New System.Drawing.Size(147, 116)
         Me.BtnSellNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BtnSellNew.TabIndex = 2
         Me.BtnSellNew.TabStop = False
@@ -241,9 +243,10 @@ Partial Class principal
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(1076, 795)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(717, 509)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(8, 8)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(5, 5)
         Me.FlowLayoutPanel1.TabIndex = 21
         '
         'Label4
@@ -251,20 +254,20 @@ Partial Class principal
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(1252, 659)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label4.Location = New System.Drawing.Point(835, 422)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(320, 37)
+        Me.Label4.Size = New System.Drawing.Size(201, 25)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "REGISTRO VENTAS"
         '
         'btnClientes
         '
         Me.btnClientes.Image = Global.spos.My.Resources.Resources.btnclientes
-        Me.btnClientes.Location = New System.Drawing.Point(1294, 122)
-        Me.btnClientes.Margin = New System.Windows.Forms.Padding(6)
+        Me.btnClientes.Location = New System.Drawing.Point(863, 78)
+        Me.btnClientes.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClientes.Name = "btnClientes"
-        Me.btnClientes.Size = New System.Drawing.Size(220, 181)
+        Me.btnClientes.Size = New System.Drawing.Size(147, 116)
         Me.btnClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnClientes.TabIndex = 16
         Me.btnClientes.TabStop = False
@@ -275,10 +278,10 @@ Partial Class principal
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(1220, 309)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Location = New System.Drawing.Point(813, 198)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(402, 37)
+        Me.Label5.Size = New System.Drawing.Size(252, 25)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "HISTORIAL DE CLIENTES"
         '
@@ -287,20 +290,20 @@ Partial Class principal
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label7.Location = New System.Drawing.Point(1627, 309)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Location = New System.Drawing.Point(1084, 198)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(439, 37)
+        Me.Label7.Size = New System.Drawing.Size(272, 25)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "REGISTRO DE INVENTARIO"
         '
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.spos.My.Resources.Resources.reporte
-        Me.PictureBox5.Location = New System.Drawing.Point(1717, 106)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox5.Location = New System.Drawing.Point(1145, 68)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox5.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 25
         Me.PictureBox5.TabStop = False
@@ -311,21 +314,21 @@ Partial Class principal
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label8.Location = New System.Drawing.Point(1689, 659)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Location = New System.Drawing.Point(1106, 422)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(363, 37)
+        Me.Label8.Size = New System.Drawing.Size(228, 25)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "REGISTRO FACTURAS"
         Me.Label8.Visible = False
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.spos.My.Resources.Resources.receipt_bill_invoice_price_payment_icon_187248
-        Me.PictureBox7.Location = New System.Drawing.Point(1717, 462)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(1145, 296)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(220, 181)
+        Me.PictureBox7.Size = New System.Drawing.Size(147, 116)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 26
         Me.PictureBox7.TabStop = False
@@ -334,11 +337,11 @@ Partial Class principal
         '
         'principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.SlateGray
-        Me.ClientSize = New System.Drawing.Size(2095, 849)
+        Me.ClientSize = New System.Drawing.Size(1377, 513)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox5)
@@ -358,7 +361,7 @@ Partial Class principal
         Me.Controls.Add(Me.BtnSellNew)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "principal"
         Me.Text = "principal"
         Me.TopMost = True

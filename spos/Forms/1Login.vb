@@ -20,6 +20,7 @@ Public Class Login
                 If reader.Read() Then
                     ' Guardamos el ID del usuario en la variable global
                     session.userid = Convert.ToInt32(reader("id"))
+                    session.user_vendedor = usr
                     Return True
                 Else
                     Return False

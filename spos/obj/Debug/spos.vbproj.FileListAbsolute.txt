@@ -53,7 +53,6 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._8_1agregarCliente_.resourc
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._8_2editarCliente.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.facturacion.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.gastos.resources
-C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.historialVentas.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.inventario.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.Login.resources
 C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.principal.resources
@@ -76,3 +75,13 @@ C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\spos.exe.manifest
 C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\spos.application
 C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.exe.manifest
 C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.application
+C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\spos.exe.manifest
+C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\spos.application
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos._10historialFacturas.resources
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.agregarCliente_Fac.resources
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.historialFacturas.resources
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.exe.manifest
+C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.application
+C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.dll
+C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.pdb
+C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.xml

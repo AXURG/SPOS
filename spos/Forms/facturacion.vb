@@ -1,14 +1,13 @@
 ﻿Imports System.Data.SQLite
-
+Imports System.IO
+Imports System.Drawing
 Public Class Facturacion
 
     Public IDVenta As Integer ' Se debe asignar al abrir este formulario
 
-
-
     Private Sub FacturacionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-        lblVendedor.Text = ObtenerNombreUsuario(session.userid)
+        LblVendedor.Text = (session.user_vendedor)
         LlenarRFCs()
         CargarDetalleVenta()
     End Sub
@@ -43,19 +42,7 @@ Public Class Facturacion
     End Sub
 
     ' Obtener nombre del usuario (vendedor)
-    Private Function ObtenerNombreUsuario(idUsuario As Integer) As String
-        Using conn As SQLiteConnection = DBConnection.GetConnection()
-            conn.Open()
-            Dim cmd As New SQLiteCommand("SELECT nombre FROM VENDEDORES WHERE id = @id", conn)
-            cmd.Parameters.AddWithValue("@id", idUsuario)
-            Dim nombre As Object = cmd.ExecuteScalar()
-            If nombre IsNot Nothing Then
-                Return nombre.ToString()
-            Else
-                Return "Desconocido"
-            End If
-        End Using
-    End Function
+
 
     ' Cargar productos de la venta y calcular totales
     Private Sub CargarDetalleVenta()
@@ -93,10 +80,6 @@ Public Class Facturacion
     End Sub
 
     Private Sub btnCreateFactura_Click(sender As Object, e As EventArgs) Handles btnCreateFactura.Click
-        Dim subtotal As Decimal = 0D
-        Dim iva As Decimal = 0D
-        Dim total As Decimal = 0D
-        Dim clienteID As Integer = -1
 
         ' Obtener datos de la venta (incluye ID del cliente)
         Using conn As SQLiteConnection = DBConnection.GetConnection()
@@ -116,41 +99,53 @@ Public Class Facturacion
                 MsgBox("No se encontró el cliente con ese RFC.", vbCritical)
                 Return
             End If
-            clienteID = Convert.ToInt32(result)
+            clienteid = Convert.ToInt32(result)
+            session.userid = clienteid
 
+            ' Ruta donde deseas guardar la imagen (puedes modificarla o usar FolderBrowserDialog)
+            Dim fechaFormateada As String = DateTime.Now.ToString("hh:mmtt._dd-MM-yyyy", Globalization.CultureInfo.InvariantCulture).ToLower()
+            Dim rutaGuardar As String = "C:\Facturas\captura_factura_" & fechaFormateada.Replace(":", "").Replace("/", "-") & "_" & clienteid & "_" & IDVenta & ".png"
 
-            ' Calcular subtotal desde DVENTA
-            Dim cmdTotal As New SQLiteCommand("
-            SELECT SUM(importe) 
-            FROM DVENTA 
-            WHERE venta_id = @ventaID", conn)
-            cmdTotal.Parameters.AddWithValue("@ventaID", IDVenta)
+            ' Crear un bitmap con el tamaño del formulario
+            Dim bmp As New Bitmap(Me.Width, Me.Height)
 
-            Dim totalStr = cmdTotal.ExecuteScalar()
-            If totalStr IsNot Nothing AndAlso Not IsDBNull(totalStr) Then
-                subtotal = Convert.ToDecimal(totalStr)
+            ' Dibujar el contenido del formulario en el bitmap
+            Me.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
+
+            ' Verifica si la carpeta existe, si no, la crea
+            Dim carpeta As String = Path.GetDirectoryName(rutaGuardar)
+            If Not Directory.Exists(carpeta) Then
+                Directory.CreateDirectory(carpeta)
             End If
 
-            iva = subtotal * 0.16D
-            total = subtotal + iva
+            ' Guardar el bitmap como imagen
+            bmp.Save(rutaGuardar, Imaging.ImageFormat.Png)
 
-            ' Insertar en tabla facturas
-            Dim cmdInsert As New SQLiteCommand("
-            INSERT INTO facturas (venta_id, cliente_id, fecha, subtotal, iva, total)
-            VALUES (@venta_id, @cliente_id, datetime('now','localtime'), @subtotal, @iva, @total)
-        ", conn)
 
-            cmdInsert.Parameters.AddWithValue("@venta_id", IDVenta)
-            cmdInsert.Parameters.AddWithValue("@cliente_id", clienteID)
-            cmdInsert.Parameters.AddWithValue("@subtotal", subtotal)
-            cmdInsert.Parameters.AddWithValue("@iva", iva)
-            cmdInsert.Parameters.AddWithValue("@total", total)
+            ' 🔄 ACTUALIZAR el campo id_cliente en la tabla ventas
+            Dim cmdUpdate As New SQLiteCommand("UPDATE ventas SET cliente_id = @clienteid WHERE id = @ventaid", conn)
+            cmdUpdate.Parameters.AddWithValue("@clienteid", clienteid)
+            cmdUpdate.Parameters.AddWithValue("@ventaid", IDVenta)
+            cmdUpdate.ExecuteNonQuery()
 
-            cmdInsert.ExecuteNonQuery()
+            ' Confirmación
+            MessageBox.Show("Factura capturada y guardada en: " & rutaGuardar, "Captura Guardada", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
+            Me.Close()
         End Using
 
-        MsgBox("Factura creada correctamente.", vbInformation)
+    End Sub
+
+    Private Sub BtnSesion_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
+
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+        agregarCliente_Fac.ShowDialog()
+        LlenarRFCs()
+        Me.Show()
+    End Sub
+
 
 End Class

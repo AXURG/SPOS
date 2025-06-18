@@ -7,6 +7,7 @@ Public Class VentaN
     Private ProductosReservados As New Dictionary(Of String, Integer)
 
     Private Sub VentasForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         ' Forzar cultura a México para formato de moneda en pesos
         Thread.CurrentThread.CurrentCulture = New CultureInfo("es-MX")
 
@@ -59,6 +60,7 @@ Public Class VentaN
             Return
         End If
 
+        ' Obtener el precio y existencias del producto seleccionado
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             Dim query As String = "SELECT precio, existencia FROM productos WHERE nombre = @nombre"
             Using command As New SQLiteCommand(query, connection)
@@ -66,31 +68,8 @@ Public Class VentaN
                 connection.Open()
                 Using reader As SQLiteDataReader = command.ExecuteReader()
                     If reader.Read() Then
-                        If Not reader.IsDBNull(reader.GetOrdinal("precio")) Then
-                            If Not reader.IsDBNull(reader.GetOrdinal("precio")) Then
-                                Dim precioStr As String = reader("precio").ToString().Trim()
-                                If Decimal.TryParse(precioStr, NumberStyles.Any, CultureInfo.InvariantCulture, precio) Then
-                                    ' precio ya está correctamente convertido
-                                Else
-                                    MsgBox("El precio del producto no se pudo convertir: " & precioStr, vbExclamation)
-                                    Return
-                                End If
-                            Else
-                                MsgBox("El precio es NULL en la base de datos.", vbExclamation)
-                                Return
-                            End If
-
-                        Else
-                            MsgBox("El precio del producto no está definido.", vbExclamation)
-                            Return
-                        End If
-
-                        If Not reader.IsDBNull(reader.GetOrdinal("existencia")) Then
-                            existencias = Convert.ToInt32(reader("existencia"))
-                        Else
-                            MsgBox("La existencia del producto no está definida.", vbExclamation)
-                            Return
-                        End If
+                        precio = Convert.ToDecimal(reader("precio"))
+                        existencias = Convert.ToInt32(reader("existencia"))
                     Else
                         MsgBox("El producto no existe.", vbExclamation)
                         Return
@@ -99,11 +78,7 @@ Public Class VentaN
             End Using
         End Using
 
-        ' Aquí continúa el código para verificar existencias, agregar a la venta, etc.
-
-
-
-    Dim existenciasReservadas = If(ProductosReservados.ContainsKey(producto), ProductosReservados(producto), 0)
+        Dim existenciasReservadas = If(ProductosReservados.ContainsKey(producto), ProductosReservados(producto), 0)
         If piezas > existencias - existenciasReservadas Then
             MsgBox("No hay suficientes existencias.", vbExclamation)
             Return
@@ -115,9 +90,29 @@ Public Class VentaN
             ProductosReservados(producto) = piezas
         End If
 
-        Dim total As Decimal = piezas * precio
-        DgvProductos.Rows.Add(producto, piezas, precio.ToString("C2"), total.ToString("C2"))
-        Subtotal += total
+        ' Actualizar el DataGridView, verificando si el producto ya está en la lista.
+        Dim found As Boolean = False
+        For Each row As DataGridViewRow In DgvProductos.Rows
+            If row.IsNewRow Then Continue For
+
+            ' Si el producto ya está en el DataGridView, actualiza la cantidad
+            If row.Cells(0).Value.ToString() = producto Then
+                Dim cantidadActual As Integer = Convert.ToInt32(row.Cells(1).Value)
+                row.Cells(1).Value = cantidadActual + piezas
+                row.Cells(3).Value = "$" & (cantidadActual + piezas) * precio
+                found = True
+                Exit For
+            End If
+        Next
+
+        ' Si el producto no existe en el DataGridView, agregarlo como una nueva fila
+        If Not found Then
+            Dim total As Decimal = piezas * precio
+            DgvProductos.Rows.Add(producto, piezas, precio.ToString("C2"), total.ToString("C2"))
+        End If
+
+        ' Actualizar el subtotal
+        Subtotal += piezas * precio
         TxtTotal.Text = Subtotal.ToString("C2")
     End Sub
 
@@ -156,30 +151,28 @@ Public Class VentaN
     End Sub
 
     Private Sub BtnFinalizar_Click(sender As Object, e As EventArgs) Handles BtnFinalizar.Click
+        session.userid = 0
         If DgvProductos.Rows.Count = 0 Then
             MsgBox("No hay productos en el carrito.", vbExclamation)
             Return
         End If
 
-        Dim confirmacionVenta = MsgBox("¿Está seguro de terminar la venta? No se podrá revertir.", vbYesNo Or vbInformation)
+        Dim confirmacionVenta = MsgBox("¿Está seguro de terminar la venta? No se podrá revertir.", vbYesNo + vbQuestion, "Finalizar Vemta")
         If confirmacionVenta = vbYes Then
-            Dim facturar = MsgBox("¿Se desea facturar?", vbYesNo, "Facturación")
+            Dim facturar = MsgBox("¿Se desea facturar? Esta Accion es Irreversible", vbYesNo + vbExclamation, "Facturación")
             Dim facturacionFlag As Integer = If(facturar = vbYes, 1, 0)
+            RegistrarVenta(facturacionFlag, session.userid)
 
-            ' Guardar venta en base de datos
-            RegistrarVenta(facturacionFlag)
 
-            ' Obtener ID de la venta recién registrada
-            Dim ultimoID As Integer = ObtenerUltimoIDVenta()
-
-            ' Si se desea facturar, abrir formulario
             If facturacionFlag = 1 Then
+                ' Obtener ID de la venta recién registrada
+                Dim ultimoID As Integer = ObtenerUltimoIDVenta()
                 Dim frmFact As New Facturacion()
                 frmFact.IDVenta = ultimoID
                 frmFact.ShowDialog()
+            ElseIf facturacionFlag = 0 Then
+                MsgBox("Venta finalizada exitosamente.", vbInformation)
             End If
-
-            MsgBox("Venta finalizada exitosamente.", vbInformation)
             LimpiarFormulario()
             ProductosReservados.Clear()
             Subtotal = 0
@@ -188,14 +181,14 @@ Public Class VentaN
 
 
 
-    Private Sub RegistrarVenta(facturacion As Integer)
+    Private Sub RegistrarVenta(facturacion As Integer, idCliente As Integer)
         Using connection As SQLiteConnection = DBConnection.GetConnection()
             connection.Open()
 
             Dim transaction As SQLiteTransaction = connection.BeginTransaction()
 
             Try
-                Dim insertVenta As String = "INSERT INTO VENTAS (fecha, total, total_productos, facturacion, vendedor_id) VALUES (@fecha, @total, @total_productos, @facturacion, @vendedor_id)"
+                Dim insertVenta As String = "INSERT INTO VENTAS (fecha, total, total_productos, facturacion, vendedor_id, cliente_id) VALUES (@fecha, @total, @total_productos, @facturacion, @vendedor_id, @cliente_id)"
                 Using cmdVenta As New SQLiteCommand(insertVenta, connection)
                     cmdVenta.Parameters.AddWithValue("@fecha", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
                     cmdVenta.Parameters.AddWithValue("@total", Subtotal)
@@ -204,6 +197,7 @@ Public Class VentaN
                     cmdVenta.Parameters.AddWithValue("@total_productos", totalProductos)
                     cmdVenta.Parameters.AddWithValue("@facturacion", facturacion)
                     cmdVenta.Parameters.AddWithValue("@vendedor_id", session.userid)
+                    cmdVenta.Parameters.AddWithValue("@cliente_id", idCliente)
                     cmdVenta.ExecuteNonQuery()
                 End Using
 
