@@ -90,4 +90,8 @@ usuario_id AS [Efectuante del Gasto] FROM gastos ORDER BY id_gasto"
             End Try
         End Using
     End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
 End Class

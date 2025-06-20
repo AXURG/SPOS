@@ -1,6 +1,9 @@
 ﻿Imports System.Data.SQLite
 Imports System.Globalization
+Imports System.IO
 Imports System.Threading
+Imports iTextSharp.text
+Imports iTextSharp.text.pdf
 
 Public Class VentaN
     Private Subtotal As Decimal = 0
@@ -246,6 +249,7 @@ VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
                 Next
 
                 transaction.Commit()
+                GenerarTicketPDF(ventaId)
             Catch ex As Exception
                 transaction.Rollback()
                 MsgBox("Error al registrar la venta: " & ex.Message, vbCritical)
@@ -265,4 +269,122 @@ VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
         principal.Show()
         Me.Close()
     End Sub
+
+
+    Private Function ConvertirNumeroALetra(ByVal numero As Decimal) As String
+        Dim culture = New CultureInfo("es-MX")
+        Dim texto = StrConv(numero.ToString("C", culture), VbStrConv.Uppercase)
+        Return texto & " M.N."
+    End Function
+
+    Private Sub GenerarTicketPDF(ventaId As Long)
+        Try
+            ' Obtener datos del emisor desde la tabla FACTURACION_EMISORES
+            Dim emisor As DataRow = Nothing
+            Using conn As SQLiteConnection = DBConnection.GetConnection()
+                conn.Open()
+                Dim da As New SQLiteDataAdapter("SELECT * FROM FACTURACION_EMISORES LIMIT 1", conn)
+                Dim dt As New DataTable()
+                da.Fill(dt)
+                If dt.Rows.Count = 0 Then
+                    MsgBox("No hay configuración de emisor registrada.", vbExclamation)
+                    Exit Sub
+                End If
+                emisor = dt.Rows(0)
+            End Using
+
+            ' Ruta del PDF a generar
+            Dim rutaPDF As String = $"ticket_venta_{ventaId}.pdf"
+
+            Dim doc As New Document(PageSize.A4, 30, 30, 20, 30)
+            PdfWriter.GetInstance(doc, New FileStream(rutaPDF, FileMode.Create))
+            doc.Open()
+
+            ' Encabezado: Logo + Datos del negocio
+            Dim tableEncabezado As New PdfPTable(2)
+            tableEncabezado.WidthPercentage = 100
+            tableEncabezado.SetWidths({30, 70})
+
+            ' Logo
+            Dim logoPath As String = emisor("LOGO").ToString()
+            If File.Exists(logoPath) Then
+                Dim logo = Image.GetInstance(logoPath)
+                logo.ScaleAbsolute(60, 60)
+                Dim cellLogo As New PdfPCell(logo)
+                cellLogo.Border = Rectangle.NO_BORDER
+                tableEncabezado.AddCell(cellLogo)
+            Else
+                tableEncabezado.AddCell(New PdfPCell(New Phrase("")) With {.Border = Rectangle.NO_BORDER})
+            End If
+
+            ' Datos del negocio
+            Dim datos = $"{emisor("NOMBRE")}" & vbCrLf &
+                    $"{emisor("CALLE")} {emisor("NOEXTERIOR")}" & vbCrLf &
+                    $"{emisor("COLONIA")}, {emisor("MUNICIPIO")}" & vbCrLf &
+                    $"{emisor("ESTADO")}, CP {emisor("CODIGOPOSTAL")}" & vbCrLf &
+                    $"RFC: {emisor("RFC")}" & vbCrLf &
+                    $"Email: {emisor("EMAIL")}"
+            Dim cellInfo As New PdfPCell(New Phrase(datos, FontFactory.GetFont(FontFactory.HELVETICA, 10)))
+            cellInfo.Border = Rectangle.NO_BORDER
+            tableEncabezado.AddCell(cellInfo)
+            doc.Add(tableEncabezado)
+
+            ' Título
+            doc.Add(New Paragraph("NOTA DE VENTA", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14)))
+            doc.Add(New Paragraph("Fecha: " & Now.ToString("dd/MM/yyyy HH:mm:ss")))
+            doc.Add(New Paragraph(" "))
+
+            ' Tabla de productos
+            Dim tablaProductos As New PdfPTable(5)
+            tablaProductos.WidthPercentage = 100
+            tablaProductos.SetWidths({10, 10, 40, 20, 20})
+
+            Dim bold = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 9)
+            tablaProductos.AddCell(New Phrase("CANT", bold))
+            tablaProductos.AddCell(New Phrase("UNI", bold))
+            tablaProductos.AddCell(New Phrase("DESCRIPCIÓN", bold))
+            tablaProductos.AddCell(New Phrase("P. UNIT", bold))
+            tablaProductos.AddCell(New Phrase("IMPORTE", bold))
+
+            Dim total As Decimal = 0
+
+            ' Leer productos de la venta
+            Using conn As SQLiteConnection = DBConnection.GetConnection()
+                conn.Open()
+                Dim cmd As New SQLiteCommand("
+                SELECT P.nombre, D.cantidad, D.precio_unitario, D.importe
+                FROM DVENTA D
+                JOIN PRODUCTOS P ON P.id = D.producto_id
+                WHERE D.venta_id = @ventaId", conn)
+                cmd.Parameters.AddWithValue("@ventaId", ventaId)
+
+                Using reader = cmd.ExecuteReader()
+                    While reader.Read()
+                        tablaProductos.AddCell(reader("cantidad").ToString())
+                        tablaProductos.AddCell("PZA")
+                        tablaProductos.AddCell(reader("nombre").ToString())
+                        tablaProductos.AddCell(FormatCurrency(reader("precio_unitario")))
+                        tablaProductos.AddCell(FormatCurrency(reader("importe")))
+
+                        total += Convert.ToDecimal(reader("importe"))
+                    End While
+                End Using
+            End Using
+
+            doc.Add(tablaProductos)
+
+            doc.Add(New Paragraph(" "))
+            doc.Add(New Paragraph("CANTIDAD EN LETRA: " & ConvertirNumeroALetra(total)))
+            doc.Add(New Paragraph("TOTAL: " & total.ToString("C2"), FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 11)))
+
+            doc.Add(New Paragraph(" "))
+            doc.Add(New Paragraph(emisor("LEYENDATICKET").ToString(), FontFactory.GetFont(FontFactory.HELVETICA_OBLIQUE, 9)))
+            doc.Close()
+
+            MsgBox("Ticket generado: " & rutaPDF, vbInformation)
+        Catch ex As Exception
+            MsgBox("Error al generar ticket: " & ex.Message, vbCritical)
+        End Try
+    End Sub
+
 End Class

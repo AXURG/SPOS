@@ -30,7 +30,6 @@ C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.vbproj.Up2Date
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.exe
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.xml
 C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.pdb
-C:\Users\aurg\Source\Repos\SPOS\spos\obj\Debug\spos.exe.config
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\data\LARIS.db
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\spos.exe.config
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\spos.exe
@@ -85,3 +84,13 @@ C:\Users\orzun\Source\Repos\SPOS\spos\obj\Debug\spos.application
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.dll
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.pdb
 C:\Users\orzun\Source\Repos\SPOS\spos\bin\Debug\System.Drawing.Common.xml
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.agregarCliente_Fac.resources
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\data\LARIS.db
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\itextsharp.dll
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\System.Drawing.Common.dll
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\itextsharp.xml
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\System.Drawing.Common.pdb
+C:\Users\aurg\source\repos\SPOS\spos\bin\Debug\System.Drawing.Common.xml
+C:\Users\aurg\source\repos\SPOS\spos\obj\Debug\spos.exe.config
