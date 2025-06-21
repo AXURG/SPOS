@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="spos.exe.manifest" size="8470">
+    <dependentAssembly dependencyType="install" codebase="spos.exe.manifest" size="10247">
       <assemblyIdentity name="spos.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hLgsS3snEz4Vrfxk6L5CxeqyKnmUmu8oSVNxUrRdvSc=</dsig:DigestValue>
+        <dsig:DigestValue>GM97V+FsnrDEGV8LJRqwCuGLKA2n1RyaEmi8dfwBddM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

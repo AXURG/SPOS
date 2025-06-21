@@ -42,6 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Cryptography.dll" size="6867224">
+      <assemblyIdentity name="BouncyCastle.Cryptography" version="2.0.0.0" publicKeyToken="072EDCF4A5328938" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rsInFU/FSXOf9aB5IHI2QfdzzmXQXcpwshUYPJPpZB0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4994080">
       <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -66,14 +78,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="spos.exe" size="536024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2592768">
+      <assemblyIdentity name="itextsharp" version="5.5.13.4" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K31q/P+F9Sm5aL/s2KHzVhIoG5E8m0UEaTMe3SBRwQk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="spos.exe" size="553432">
       <assemblyIdentity name="spos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bg/DoVVv5OdzM/idlHUpVQCJigqHuLe9bAGlCzlxfbc=</dsig:DigestValue>
+        <dsig:DigestValue>2LGKhR8W9vAjPRvJP8ITWPlugNV0+8ji1mfTxRoVtEQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -131,7 +155,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bfQGmrvfvh6NenR+evn3MixKZJxRiJfX+C8bQ6QwTiU=</dsig:DigestValue>
+      <dsig:DigestValue>RkYGzdNeTJWWVz8+gIsbY8V9Fh/n2dMLt8A3tw2OgRs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\cliente.png" size="21666">
@@ -141,6 +165,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>Mdn72DZuZ+evVrpB1k5iqsj9w4NpOwRwPQITgoO9QvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Logo.jpg" size="110279">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kYyKXspDhiA7SQnzBbURtlJEFxYzU8GeDCfNrBpMdCM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="spos.exe.config" size="1707">

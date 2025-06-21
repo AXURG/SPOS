@@ -293,8 +293,12 @@ VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
                 emisor = dt.Rows(0)
             End Using
 
-            ' Ruta del PDF a generar
-            Dim rutaPDF As String = $"ticket_venta_{ventaId}.pdf"
+            ' Ruta del PDF a generar en C:\Tickets
+            Dim rutaCarpeta As String = "C:\Tickets"
+            If Not Directory.Exists(rutaCarpeta) Then
+                Directory.CreateDirectory(rutaCarpeta)
+            End If
+            Dim rutaPDF As String = Path.Combine(rutaCarpeta, $"ticket_venta_{ventaId}.pdf")
 
             Dim doc As New Document(PageSize.A4, 30, 30, 20, 30)
             PdfWriter.GetInstance(doc, New FileStream(rutaPDF, FileMode.Create))
@@ -305,8 +309,13 @@ VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
             tableEncabezado.WidthPercentage = 100
             tableEncabezado.SetWidths({30, 70})
 
-            ' Logo
-            Dim logoPath As String = emisor("LOGO").ToString()
+            ' Logo desde la carpeta del proyecto
+            Dim logoPath As String = Path.Combine(Application.StartupPath, "Resources\Logo.jpg")
+            If Not File.Exists(logoPath) Then
+                MsgBox("Logo no encontrado en: " & logoPath)
+            Else
+                MsgBox("Logo cargado correctamente.")
+            End If
             If File.Exists(logoPath) Then
                 Dim logo = Image.GetInstance(logoPath)
                 logo.ScaleAbsolute(60, 60)
@@ -319,11 +328,11 @@ VALUES (@venta_id, @producto_id, @precio_unitario, @cantidad, @importe)"
 
             ' Datos del negocio
             Dim datos = $"{emisor("NOMBRE")}" & vbCrLf &
-                    $"{emisor("CALLE")} {emisor("NOEXTERIOR")}" & vbCrLf &
-                    $"{emisor("COLONIA")}, {emisor("MUNICIPIO")}" & vbCrLf &
-                    $"{emisor("ESTADO")}, CP {emisor("CODIGOPOSTAL")}" & vbCrLf &
-                    $"RFC: {emisor("RFC")}" & vbCrLf &
-                    $"Email: {emisor("EMAIL")}"
+                $"{emisor("CALLE")} {emisor("NOEXTERIOR")}" & vbCrLf &
+                $"{emisor("COLONIA")}, {emisor("MUNICIPIO")}" & vbCrLf &
+                $"{emisor("ESTADO")}, CP {emisor("CODIGOPOSTAL")}" & vbCrLf &
+                $"RFC: {emisor("RFC")}" & vbCrLf &
+                $"Email: {emisor("EMAIL")}"
             Dim cellInfo As New PdfPCell(New Phrase(datos, FontFactory.GetFont(FontFactory.HELVETICA, 10)))
             cellInfo.Border = Rectangle.NO_BORDER
             tableEncabezado.AddCell(cellInfo)
